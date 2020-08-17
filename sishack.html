@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIS Hackathon</title>
+    <link rel="stylesheet" href="./curstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./menustyle.css">
+    <link rel="stylesheet" href="./blobstyle.css">
+    <link rel="stylesheet" href="./animations.css">
+    <link rel="icon" href="./AB2.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #1e2023;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            height: 100vh;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow: scroll;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @font-face {
+            font-family: 'galano_grotesque_demobold';
+            src: url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff2') format('woff2'), url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'plantinregular';
+            src: url('Font/Plantin/plantin-webfont.woff2') format('woff2'), url('Font/Plantin/plantin-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .nav__list-item {
+            font-family: 'galano_grotesque_demobold';
+            color: white;
+            ;
+        }
+        
+        p {
+            font-family: 'plantinregular';
+            text-align: justify;
+            padding-left: 7vh;
+            padding-top: 2vh;
+            font-size: 17px;
+            letter-spacing: 0.7px;
+            line-height: 20px;
+            width: 100%;
+            color: #acacac;
+            width: 40vw;
+            text-align: justify;
+        }
+        
+        h1 {
+            padding-bottom: 0%;
+            width: 90%;
+            padding-top: 4vh;
+            padding-left: 3vw;
+            margin-bottom: 0;
+            font-size: 50px;
+            color: white;
+            cursor: default;
+            font-family: 'galano_grotesque_demobold';
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        [aos="fade"] {
+            opacity: 0;
+            transition-property: opacity;
+        }
+        
+        [aos="fade"].aos-animate {
+            opacity: 1;
+        }
+        
+        .special__a {
+            color: #b170a4;
+        }
+        
+        .fifty {
+            height: 100vh;
+            width: 50vw;
+            overflow-x: hidden;
+            float: left;
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.39) 0%, rgba(30, 32, 35, 0.445) 100%), url("./sishack2.jpg");
+            background-position: center right;
+        }
+        
+        .fifty-two {
+            padding-top: 25vh;
+            float: right;
+            width: 50vw;
+        }
+        /*button {
+            font-size: 15px;
+            background-color: #131416;
+            height: 40px;
+            width: 150px;
+            outline: none;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            margin-left: 35vh;
+            margin-top: 2vh;
+            font-family: "plantinregular";
+        }*/
+    </style>
+
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <div class="cursor"></div>
+
+    <div class="entire-nav">
+        <div class="menu-icon">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>
+
+        <div class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="index.html#Home">Home</a></li>
+                    <li class="nav__list-item"><a href="index.html#About">About</a></li>
+                    <li class="nav__list-item"><a href="work.html">Work</a></li>
+                    <li class="nav__list-item"><a href="index.html#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fifty" data-aos="fade"></div>
+    <div class="fifty-two">
+        <h1 data-aos="fade-Up">SIS Hackathon</h1>
+        <p data-aos="fade-Up">The Neev Academy team won 2nd place at the Stonehill International School Hackathon, Junior Team, 2019. The project was based on the theme "education". I was a part of this team, and, personally, it was a great learning journey. Below, you can
+            have a look at the work of our team, NextGen. Overall, it was an enriching journey, from staying overnight at a school, alone, where I developed Self-Management Skills. Click <a class="special__a" href="https://scratch.mit.edu/projects/296252550/">here</a>            to view our project.</p>
+        <!--<button>My certificate</button>-->
+    </div>
+
+
+    <script src="./menuscript.js"></script>
+</body>
+<script src="./curscript.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+
+</html>
