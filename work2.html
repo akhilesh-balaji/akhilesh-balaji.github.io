@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="./curstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./menustyle.css">
+    <link rel="stylesheet" href="./blobstyle.css">
+    <link rel="stylesheet" href="./animations.css">
+    <link rel="icon" href="./AB2.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #1e2023;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            height: 100vh;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow: hidden;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .parent::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @font-face {
+            font-family: 'galano_grotesque_demobold';
+            src: url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff2') format('woff2'), url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'plantinregular';
+            src: url('Font/Plantin/plantin-webfont.woff2') format('woff2'), url('Font/Plantin/plantin-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .nav__list-item {
+            font-family: 'galano_grotesque_demobold';
+            color: white;
+            ;
+        }
+        
+        .main-title {
+            font-family: 'galano_grotesque_demobold';
+        }
+        
+        p {
+            font-family: 'plantinregular';
+            text-align: justify;
+            padding-left: 8vh;
+            font-size: 2.7868852459016393vh;
+            letter-spacing: 0.11475409836065574vh;
+            line-height: 3.278688524590164vh;
+            width: 100%;
+            color: #acacac;
+        }
+        
+        .site-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            position: relative;
+            cursor: default;
+            overflow: hidden;
+        }
+        
+        .main-title {
+            padding-right: 100px;
+            padding-bottom: 0%;
+            margin-bottom: 0;
+            font-size: 120px;
+            color: white;
+            cursor: default;
+        }
+        
+        h1 {
+            padding-bottom: 0%;
+            padding-top: 4vh;
+            padding-left: 3vh;
+            margin-bottom: 0;
+            font-size: 14.754098360655737vh;
+            color: white;
+            cursor: default;
+            font-family: 'galano_grotesque_demobold';
+        }
+        
+        .About {
+            scroll-snap-align: start;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .mypic {
+            float: right;
+            padding: 0;
+            margin: 0;
+            z-index: 9990;
+        }
+        
+        .who {
+            padding-top: 20vh;
+        }
+        
+        .aboutp {
+            padding-top: 20px;
+        }
+        
+        [aos="fade"] {
+            opacity: 0;
+            transition-property: opacity;
+        }
+        
+        [aos="fade"].aos-animate {
+            opacity: 1;
+        }
+        
+        .special__a {
+            color: #b170a4;
+        }
+        
+        .workel {
+            height: 100vh;
+            scroll-snap-align: start;
+            position: relative;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            cursor: default;
+        }
+        
+        .two {
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .three {
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./sishack2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+        
+        .four {
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./Mockup 4.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .five {
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./MockUp.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-gap: 1vh;
+            grid-template-columns: 31vw 31vw 31vw;
+            grid-template-rows: 49vh 49vh 49vh 49vh;
+            background-color: #1E2023;
+            margin: 1vh;
+        }
+        
+        .box {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            font-size: 150%;
+        }
+        
+        .a {
+            grid-column: 1 / span 2;
+        }
+        
+        .b {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+        }
+        
+        .c {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        
+        .d {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        
+        .e {
+            grid-column: 1;
+            grid-row: 3 / span 2;
+        }
+        
+        .f {
+            grid-column: 2/ span 2;
+            grid-row: 3;
+        }
+        
+        .g {
+            grid-column: 2;
+            grid-row: 4;
+        }
+        
+        .h {
+            grid-column: 3;
+            grid-row: 4;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <div class="cursor"></div>
+
+    <div class="entire-nav">
+        <div class="menu-icon">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>
+
+        <div class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="index.html#Home">Home</a></li>
+                    <li class="nav__list-item"><a href="index.html#About">About</a></li>
+                    <li class="nav__list-item"><a href="work.html">Work</a></li>
+                    <li class="nav__list-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+        <div class="box e"></div>
+        <div class="box f"></div>
+        <div class="box g"></div>
+        <div class="box h"></div>
+    </div>
+    <!--<div class="parent row work">
+        <a href="./python.html" class="worka">
+            <section class="two workel">
+                <h1 class="workelh Work" id="Python">Profeciency in Python</h1>
+                <p class="workelp">Click to anywhere learn more</p>
+            </section>
+        </a>
+        <a href="./sishack.html" class="worka">
+            <section class="three workel">
+                <h1 class="workelh Work" id="sishack">Stonehill Hackathon</h1>
+                <p class="workelp">Click to anywhere learn more</p>
+            </section>
+        </a>
+        <a href="./thegeekly.html" class="worka">
+            <section class="four workel">
+                <h1 class="workelh Work" id="mag">The Geekly Magazine</h1>
+                <p class="workelp">Click to anywhere learn more</p>
+            </section>
+        </a>
+        <a href="./yt.html" class="worka">
+            <section class="five workel">
+                <h1 class="workelh Work" id="yt">YouTube Channel</h1>
+                <p class="workelp">Click to anywhere learn more</p>
+            </section>
+        </a>
+    </div>-->
+
+
+    <!-- partial -->
+    <script src="./menuscript.js"></script>
+</body>
+<script src="./curscript.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+
+</html>
