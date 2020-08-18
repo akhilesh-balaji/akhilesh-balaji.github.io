@@ -67,13 +67,14 @@
         
         p {
             font-family: 'plantinregular';
-            text-align: justify;
-            padding-left: 8vh;
+            text-align: center;
             font-size: 2.7868852459016393vh;
             letter-spacing: 0.11475409836065574vh;
             line-height: 3.278688524590164vh;
             width: 100%;
-            color: #acacac;
+            color: #dfdfdf;
+            visibility: hidden;
+            opacity: 0;
         }
         
         .site-content {
@@ -224,6 +225,12 @@
             opacity: 100%;
         }
         
+        .a:hover .ap {
+            visibility: visible;
+            animation: fadeIn 0.75s;
+            opacity: 100%;
+        }
+        
         .b {
             grid-column: 3;
             grid-row: 1 / span 2;
@@ -248,6 +255,12 @@
         }
         
         .b:hover .bh {
+            visibility: visible;
+            animation: fadeIn 0.75s;
+            opacity: 100%;
+        }
+        
+        .b:hover .bp {
             visibility: visible;
             animation: fadeIn 0.75s;
             opacity: 100%;
@@ -280,6 +293,12 @@
             opacity: 100%;
         }
         
+        .c:hover .cp {
+            visibility: visible;
+            animation: fadeIn 0.75s;
+            opacity: 100%;
+        }
+        
         .d {
             grid-column: 2;
             grid-row: 2;
@@ -302,6 +321,12 @@
         }
         
         .d:hover .dh {
+            visibility: visible;
+            animation: fadeIn 0.75s;
+            opacity: 100%;
+        }
+        
+        .d:hover .dp {
             visibility: visible;
             animation: fadeIn 0.75s;
             opacity: 100%;
@@ -346,6 +371,11 @@
             justify-content: center;
             text-align: center;
         }
+        
+        .ml3 {
+            color: white;
+            z-index: 999;
+        }
     </style>
 
 </head>
@@ -354,6 +384,7 @@
 
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
     <div class="cursor"></div>
+
 
     <div class="entire-nav">
         <div class="menu-icon">
@@ -373,24 +404,54 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="wrapper" data-aos="fadeIn">
         <div class="box a" onclick="location.href='./python.html';">
             <h1 class="ah">Profeciency in Python</h1>
+            <p class="ap">Aug 2, 2020</p>
         </div>
         <div class="box b" onclick="location.href='./sishack.html';">
             <h1 class="bh">Stonehill Hackathon</h1>
+            <p class="bp">Mar 23, 2019</p>
         </div>
         <div class="box c" onclick="location.href='./thegeekly.html';">
             <h1 class="ch">The Geekly</h1>
+            <p class="cp">July 3, 2018</p>
         </div>
         <div class="box d" onclick="location.href='./yt.html';">
             <h1 class="dh">YT Channel</h1>
+            <p class="dp">Sept 11, 2018</p>
+
         </div>
         <!--<div class="box e"></div>
         <div class="box f"></div>
         <div class="box g"></div>
         <div class="box h"></div>-->
     </div>
+
+    <script>
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: false
+            })
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i + 1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
 
     <!-- partial -->
     <script src="./menuscript.js"></script>
