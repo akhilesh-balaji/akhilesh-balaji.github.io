@@ -1,0 +1,333 @@
+--- 
+permalink: /404.html 
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./curstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./menustyle.css">
+    <link rel="stylesheet" href="./blobstyle.css">
+    <link rel="stylesheet" href="./animations.css">
+    <link rel="icon" href="./AB2.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #1e2023;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            height: 100vh;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow: hidden;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .parent::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @font-face {
+            font-family: 'galano_grotesque_demobold';
+            src: url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff2') format('woff2'), url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'plantinregular';
+            src: url('Font/Plantin/plantin-webfont.woff2') format('woff2'), url('Font/Plantin/plantin-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .nav__list-item {
+            font-family: 'galano_grotesque_demobold';
+            color: white;
+            ;
+        }
+        
+        .main-title {
+            font-family: 'galano_grotesque_demobold';
+        }
+        
+        p {
+            font-family: 'plantinregular';
+            text-align: justify;
+            padding-left: 8vh;
+            font-size: 2.7868852459016393vh;
+            letter-spacing: 0.11475409836065574vh;
+            line-height: 3.278688524590164vh;
+            width: 100%;
+            color: #acacac;
+        }
+        
+        .site-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            position: relative;
+            cursor: default;
+            overflow: hidden;
+            /*background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./shapes.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+        }
+        
+        .main-title {
+            padding-right: 100px;
+            padding-bottom: 0%;
+            margin-bottom: 0;
+            font-size: 120px;
+            color: white;
+            cursor: default;
+        }
+        
+        h1 {
+            padding-bottom: 0%;
+            padding-top: 4vh;
+            padding-left: 3vh;
+            margin-bottom: 0;
+            font-size: 14.754098360655737vh;
+            color: white;
+            cursor: default;
+            font-family: 'galano_grotesque_demobold';
+        }
+        
+        .About {
+            scroll-snap-align: start;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .mypic {
+            float: right;
+            padding: 0;
+            margin: 0;
+            z-index: 9990;
+            bottom: 0;
+        }
+        
+        .who {
+            padding-top: 20vh;
+        }
+        
+        .aboutp {
+            padding-top: 3.278688524590164vh;
+        }
+        
+        [aos="fade"] {
+            opacity: 0;
+            transition-property: opacity;
+        }
+        
+        [aos="fade"].aos-animate {
+            opacity: 1;
+        }
+        
+        .special__a {
+            color: #b170a4;
+        }
+        
+        .parent {
+            margin-top: 0;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 100vh;
+            scroll-snap-type: mandatory;
+            scroll-snap-points-y: repeat(100vh);
+            scroll-snap-type: y mandatory;
+        }
+        
+        .workel {
+            height: 100vh;
+            scroll-snap-align: start;
+            position: relative;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            cursor: default;
+        }
+        
+        .three {
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./sishack.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .four {
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./Mockup 4.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .five {
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./yt.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .workelh:hover {
+            cursor: pointer;
+        }
+        
+        .workelp {
+            text-align: center;
+            color: white;
+        }
+        
+        .demo a {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            z-index: 0;
+            display: inline-block;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            color: #fff;
+            letter-spacing: .1em;
+            text-decoration: none;
+            transition: opacity .3s;
+            padding-top: 10vh;
+        }
+        
+        .demo a:hover {
+            opacity: .5;
+        }
+        
+        #section05 a span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            margin-left: -12px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-animation: sdb05 1.5s infinite;
+            animation: sdb05 1.5s infinite;
+            box-sizing: border-box;
+        }
+        
+        @-webkit-keyframes sdb05 {
+            0% {
+                -webkit-transform: rotate(-45deg) translate(0, 0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes sdb05 {
+            0% {
+                transform: rotate(-45deg) translate(0, 0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(-45deg) translate(-20px, 20px);
+                opacity: 0;
+            }
+        }
+        
+        .typeform-widget {
+            padding-top: 0%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="progress"></div>
+    <!-- partial -->
+    <script src="./progscript.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <!--<div class="cursor"></div>-->
+
+    <div class="entire-nav">
+        <div class="menu-icon">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>
+
+        <div class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#Home">Home</a></li>
+                    <li class="nav__list-item"><a href="#About">About</a></li>
+                    <li class="nav__list-item"><a href="work.html">Work</a></li>
+                    <li class="nav__list-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./blobscript2.js"></script>
+    <section class="site-content" id="Home">
+        <h1 class="main-title ml3">404 Error</h1>
+    </section>
+
+
+    <!-- partial -->
+    <script src="./menuscript.js"></script>
+    <script>
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: false
+            })
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i + 1)
+            });
+    </script>
+</body>
+<script src="./curscript.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+
+</html>
