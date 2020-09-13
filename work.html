@@ -203,7 +203,7 @@
             display: grid;
             grid-gap: 1vh;
             grid-template-columns: 33vw 33vw 33vw;
-            grid-template-rows: 49vh 49vh/*49vh 49vh*/
+            grid-template-rows: 49vh 49vh 49vh/*49vh*/
             ;
             background-color: #1E2023;
         }
@@ -349,8 +349,7 @@
             animation: fadeIn 0.75s;
             opacity: 100%;
         }
-        
-        .e {
+        /* .e {
             grid-column: 1;
             grid-row: 3 / span 2;
             display: flex;
@@ -359,9 +358,50 @@
             justify-content: center;
             text-align: center;
         }
+         */
+        
+        .e {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url("./textylic.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-position: center center;
+        }
+        
+        .e:hover {
+            transition: 0.9s;
+            background: linear-gradient(90deg, rgba(30, 32, 35, 0.425) 0%, rgba(30, 32, 35, 0.466) 100%), url("./textylic.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        
+        .e:hover .eh {
+            visibility: visible;
+            animation: fadeIn 0.75s;
+            opacity: 100%;
+        }
+        
+        .e:hover .ep {
+            visibility: visible;
+            animation: fadeIn 0.75s;
+            opacity: 100%;
+        }
         
         .f {
-            grid-column: 2/ span 2;
+            grid-column: 3 / span 1;
             grid-row: 3;
             display: flex;
             flex-direction: column;
@@ -441,34 +481,34 @@
         <div class="box d" onclick="location.href='./yt.html';">
             <h1 class="dh">YT Channel</h1>
             <p class="dp">― Sept 11, 2018 ―</p>
-
         </div>
-        <!--<div class="box e"></div>
-        <div class="box f"></div>
-        <div class="box g"></div>
-        <div class="box h"></div>-->
+        <div class="box e" onclick="location.href='./textylic.html';">
+            <h1 class=" eh ">Textylic App</h1>
+            <p class="ep ">― Sep 13, 2020 ―</p>
+        </div>
+        <div class="box f "></div>
+        <!-- <div class="box g "></div>
+        <div class="box h "></div> -->
     </div>
 
     <script>
         var textWrapper = document.querySelector('.ml3');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
         anime.timeline({
-                loop: false
-            })
-            .add({
-                targets: '.ml3 .letter',
-                opacity: [0, 1],
-                easing: "easeInOutQuad",
-                duration: 2250,
-                delay: (el, i) => 150 * (i + 1)
-            }).add({
-                targets: '.ml3',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
+            loop: false
+        }).add({
+            targets: '.ml3 .letter',
+            opacity: [0, 1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 150 * (i + 1)
+        }).add({
+            targets: '.ml3',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
     </script>
 
     <!-- partial -->
