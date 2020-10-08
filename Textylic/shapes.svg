@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Users\Akhilesh\Documents\GitHub\Websites\My Website\akhilesh-balaji.github.io\Textylic\shapes.png"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="shapes.svg"
+   id="svg6"
+   version="1.1"
+   height="155"
+   width="155"
+   fill="#000000"
+   viewBox="0 0 77.5 77.5">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg6"
+     inkscape:cy="65.245455"
+     inkscape:cx="-66.71226"
+     inkscape:zoom="1.7268017"
+     showgrid="false"
+     id="namedview8"
+     inkscape:window-height="480"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     d="M 36.249023,21.136719 24.271484,52.840823 h 5.707032 l 2.571289,-7.044925 h 12.294921 l 2.606446,7.044925 h 5.74219 L 41.180664,21.136719 Z M 38.75,27.865234 43.330078,41.357422 h -9.194336 z"
+     style="opacity:0.852174;fill:#ffffff;stroke-width:3.52273"
+     id="path4" />
+  <path
+     d="M 0,0 V 21.136719 H 7.0458984 V 56.364258 H 0 v 21.13574 h 21.136719 v -7.04492 h 35.226563 v 7.04492 h 21.13672 V 56.364258 H 70.455077 V 21.136719 h 7.044925 V 0 H 56.363282 V 7.0458983 H 21.136719 V 0 Z M 7.0458984,7.0458983 H 14.09082 V 14.09082 H 7.0458984 Z m 56.3632836,0 h 7.045895 V 14.09082 H 63.409182 Z M 21.136719,14.09082 h 35.226563 v 7.045899 h 7.0459 v 35.227539 h -7.0459 v 7.04492 H 21.136719 v -7.04492 H 14.09082 V 21.136719 h 7.045899 z m 28.320313,0.868164 8.12793,16.699219 z M 7.0458984,63.409178 H 14.09082 v 7.0459 H 7.0458984 Z m 56.3632836,0 h 7.045895 v 7.0459 h -7.045895 z"
+     style="opacity:0.481159;fill:#ffffff;stroke-width:3.52273"
+     id="path841" />
+</svg>

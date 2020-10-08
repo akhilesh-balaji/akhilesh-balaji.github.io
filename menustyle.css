@@ -87,6 +87,7 @@
     -webkit-transition-delay: 0.8s;
     transition-delay: 0.8s;
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translate(0%, 100%);
     transform: translate(0%, 100%);
     -webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
@@ -152,6 +153,7 @@ body.nav-active .nav:before {
 
 body.nav-active .nav__list-item {
     opacity: 1;
+    visibility: visible;
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
     -webkit-transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
