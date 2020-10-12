@@ -413,7 +413,6 @@
         .downloadButton {
             position: fixed;
             z-index: 999;
-            background: linear-gradient(to right, #4A419B, #6F65C7);
             color: white;
             font-weight: bold;
             border: 0;
@@ -424,12 +423,22 @@
             right: 2vw;
             bottom: 2.5vh;
             visibility: hidden;
-            transition: linear 0.3s;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+            background-image: linear-gradient(to right, #4A419B, #6F65C7, #4b40aa, #756dc0);
         }
         
         .downloadButton:hover {
-            transition: linear 0.3s;
-            box-shadow: 0 19px 51px 0 rgba(0, 0, 0, 0.363), 0 14px 19px 0 rgba(0, 0, 0, 0.377);
+            background-position: 100% 0;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
         }
         
         .downloadSection {
@@ -453,7 +462,6 @@
         }
         
         .downloadSection button {
-            background: linear-gradient(to right, #FF8A01, #F4642E);
             color: white;
             font-weight: bold;
             border: 0;
@@ -462,12 +470,22 @@
             padding-left: 15px;
             padding-right: 15px;
             margin-top: 10px;
-            transition: linear 0.3s;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+            background-image: linear-gradient(to right, #FF8A01, #F4642E, #e9891b, #f15117);
         }
         
         .downloadSection button:hover {
-            transition: linear 0.3s;
-            box-shadow: 0 19px 51px 0 rgba(0, 0, 0, 0.363), 0 14px 19px 0 rgba(0, 0, 0, 0.377);
+            background-position: 100% 0;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
         }
         
         button:focus {
