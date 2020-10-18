@@ -2,364 +2,314 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163784925-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-163784925-2');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Akhilesh Balaji">
-    <meta name="description" content="My Official Website | Akhilesh Balaji">
-    <meta name="keywords" content="Akhilesh Balaji, Akhilesh, Balaji, Science, Textylic, Akhilesh B, A Balaji, Stonehill Hackathon, Profecience in Python Akhilesh, AkhileshBalaji">
-    <title>Home</title>
-    <link rel="stylesheet" href="./curstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="./menustyle.css">
-    <link rel="stylesheet" href="./blobstyle.css">
-    <link rel="stylesheet" href="./animations.css">
-    <link rel="icon" href="./AB2.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <link rel="stylesheet" href="animate.css">
+    <title>Akhilesh Balaji</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            background-color: #1e2023;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            margin: 0;
-            height: 100vh;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        
-        body::-webkit-scrollbar {
-            display: none;
-        }
-        
-        .parent::-webkit-scrollbar {
-            display: none;
-        }
-        
-        @font-face {
-            font-family: 'galano_grotesque_demobold';
-            src: url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff2') format('woff2'), url('Font/Galano grotesque/galanogrotesquedemo-bold-webfont.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'plantinregular';
-            src: url('Font/Plantin/plantin-webfont.woff2') format('woff2'), url('Font/Plantin/plantin-webfont.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        .nav__list-item {
-            font-family: 'galano_grotesque_demobold';
-            color: white;
-            ;
-        }
-        
-        .main-title {
-            font-family: 'galano_grotesque_demobold';
-        }
-        
-        p {
-            font-family: 'plantinregular';
-            text-align: justify;
-            padding-left: 8vh;
-            font-size: 2.7868852459016393vh;
-            letter-spacing: 0.11475409836065574vh;
-            line-height: 3.278688524590164vh;
-            width: 100%;
-            color: #acacac;
-            cursor: text;
-        }
-        
-        .site-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            height: 100%;
-            position: relative;
-            cursor: default;
-            overflow: hidden;
-            /*background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./shapes.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;*/
-        }
-        
-        .main-title {
-            padding-right: 100px;
-            padding-bottom: 0%;
-            margin-bottom: 0;
-            font-size: 120px;
-            color: white;
-            cursor: text;
-        }
-        
-        *::selection {
-            background: #B39AAE;
-        }
-        
-        h1 {
-            padding-bottom: 0%;
-            padding-top: 4vh;
-            padding-left: 3vh;
-            margin-bottom: 0;
-            font-size: 14.754098360655737vh;
-            color: white;
-            cursor: default;
-            font-family: 'galano_grotesque_demobold';
-            cursor: text;
-        }
-        
-        .About {
-            scroll-snap-align: start;
-        }
-        
-        a {
-            text-decoration: none;
-            color: white;
-        }
-        
-        .mypic {
-            float: right;
-            padding: 0;
-            margin: 0;
-            z-index: 9990;
-            bottom: 0;
-        }
-        
-        .who {
-            padding-top: 20vh;
-        }
-        
-        .aboutp {
-            padding-top: 3.278688524590164vh;
-        }
-        
-        [aos="fade"] {
-            opacity: 0;
-            transition-property: opacity;
-        }
-        
-        [aos="fade"].aos-animate {
-            opacity: 1;
-        }
-        
-        .special__a {
-            color: #b170a4;
-        }
-        
-        .parent {
-            margin-top: 0;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            height: 100vh;
-            scroll-snap-type: mandatory;
-            scroll-snap-points-y: repeat(100vh);
-            scroll-snap-type: y mandatory;
-        }
-        
-        .workel {
-            height: 100vh;
-            scroll-snap-align: start;
-            position: relative;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            cursor: default;
-        }
-        
-        .three {
-            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./sishack.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        .four {
-            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./Mockup 4.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        .five {
-            background: linear-gradient(90deg, rgba(30, 32, 35, 0.6283555658591562) 0%, rgba(30, 32, 35, 0.8468429608171394) 100%), url("./yt.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        .workelh:hover {
-            cursor: pointer;
-        }
-        
-        .workelp {
-            text-align: center;
-            color: white;
-        }
-        
-        .demo a {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            z-index: 0;
-            display: inline-block;
-            -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-            color: #fff;
-            letter-spacing: .1em;
-            text-decoration: none;
-            transition: opacity .3s;
-            padding-top: 10vh;
-        }
-        
-        .demo a:hover {
-            opacity: .5;
-        }
-        
-        #section05 a span {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 24px;
-            height: 24px;
-            margin-left: -12px;
-            border-left: 1px solid #fff;
-            border-bottom: 1px solid #fff;
-            -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            -webkit-animation: sdb05 1.5s infinite;
-            animation: sdb05 1.5s infinite;
-            box-sizing: border-box;
-        }
-        
-        @-webkit-keyframes sdb05 {
-            0% {
-                -webkit-transform: rotate(-45deg) translate(0, 0);
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-                opacity: 0;
-            }
-        }
-        
-        @keyframes sdb05 {
-            0% {
-                transform: rotate(-45deg) translate(0, 0);
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                transform: rotate(-45deg) translate(-20px, 20px);
-                opacity: 0;
-            }
-        }
-        
-        .typeform-widget {
-            padding-top: 0%;
-        }
-    </style>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='./site.css'>
+    <link rel="icon" href="./images/icons/icon.ico">
 </head>
 
 <body>
-    <div class="progress"></div>
-    <!-- partial -->
-    <script src="./progscript.js"></script>
-    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-    <!--<div class="cursor"></div>-->
+    <div class="cursor"></div>
+    <button class="color12 backToTopBtn" id="backToTop" onclick="location.href='#';">arrow_circle_up</button>
+    <div id="menubar">
+        <img src="./images/icons/AB7.png" width="2%" height="auto" class="menuItem" onclick="location.href='./index.html';">
+        <a onclick="location.href='#about';">About</a>
+        <a onclick="location.href='#work';">Work</a>
+        <a onclick="location.href='#contact';">Contact</a>
+        <a onclick="location.href='https:\/\/github.com/akhilesh-balaji';">GitHub</a>
+        <!-- <a style="font-family: 'Material Icons'; position: fixed; right: 2vw; font-size: 5vh;">search</a> -->
+    </div>
+    <div class="landingpage" data-aos="fade-in" data-aos-duration="2000" id="Home">
+        <h1>
+            <grad4>Akhilesh</grad4> Balaji</h1>
+        <p>I am a student who is interested in Science and Technology</p>
+        <button class="color3 lmore" onclick="location.href='#about';">Learn More</button>
+    </div>
 
-    <div class="entire-nav">
-        <div class="menu-icon">
-            <span class="menu-icon__line menu-icon__line-left"></span>
-            <span class="menu-icon__line"></span>
-            <span class="menu-icon__line menu-icon__line-right"></span>
+    <div class="about" id="about">
+        <div class="imgContainer" style="border-radius: 50%; overflow: hidden; width: 15%; height:min-content; padding: 0;" data-aos="fade-up">
+            <img src="./images/Akhilesh.png" width="100%" height="100%" class="image">
         </div>
-
-        <div class="nav">
-            <div class="nav__content">
-                <ul class="nav__list">
-                    <li class="nav__list-item"><a href="#Home">Home</a></li>
-                    <li class="nav__list-item"><a href="#About">About</a></li>
-                    <li class="nav__list-item"><a href="work.html">Work</a></li>
-                    <li class="nav__list-item"><a href="contact.html">Contact</a></li>
-                </ul>
+        <h1 class="abtHead" data-aos="fade-up">
+            <grad2>About</grad2> Me</h1>
+        <p style="width: 70%; margin-top: 0;" data-aos="fade-up">My name is Akhilesh Balaji, and I have an interest in Science and Technology. I also dabble in graphic design, at times. I currently study in 8th grade at Neev Academy, India. I have started a science magazine called The Geekly, and also own a
+            science - related YouTube Channel. I am also officially proficient in Python, a programming language. I enjoy science and technology, and I hope to learn many new things about the mysteries of the universe that nature hides from us, and spread
+            this knowledge to others as well. </p>
+    </div>
+    <div class="works" id="work">
+        <h1 style="text-align: center;" data-aos="fade-up">My
+            <grad6>Work</grad6>
+        </h1>
+        <div class="allCardsWork">
+            <div class="styleOne firstCard" onclick="" data-aos="fade-up">
+                <div class="nothingHere child">
+                    <h1>Coming Soon!</h1>
+                </div>
+            </div>
+            <div class="styleTwo firstCard textylic" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Sep 13, 2020</p>
+                </div>
+                <div class="child" onclick="showPopup('#Textylic')">
+                    <h1>Textylic</h1>
+                </div>
+            </div>
+            <div class="styleOne python" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Aug 2, 2020</p>
+                </div>
+                <div class="child" onclick="showPopup('#Python')">
+                    <h1 style="font-size: 54.9px;">Python Profecient</h1>
+                </div>
+            </div>
+            <div class="styleTwo hackathon" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Mar 23, 2019</p>
+                </div>
+                <div class="child" onclick="showPopup('#SISHack')">
+                    <h1 style="font-size: 54.9px;">Stonehill Hackathon</h1>
+                </div>
+            </div>
+            <div class="styleOne lastcard thegeekly" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Jul 3, 2018</p>
+                </div>
+                <div class="child" onclick="showPopup('#TheGeekly')">
+                    <h1 style="font-size: 54.9px;">The Geekly</h1>
+                </div>
+            </div>
+            <div class="styleTwo lastcard ytchannel" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Sep 11, 2018</p>
+                </div>
+                <div class="child" onclick="showPopup('#YTChannel')">
+                    <h1>YouTube Channel</h1>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="./blobscript.js"></script>
-    <section class="site-content" id="Home">
-        <h1 class="main-title ml3">Akhilesh Balaji</h1>
-        <section id="section05" class="demo fadeIn">
-            <a href="#About"><span></span></a>
-        </section>
-    </section>
-    <div class="parent">
-        <section class="About two" id="About">
-            <img src="mypic.png" height="47%" width="47%" class="mypic" data-aos="fade-up">
-            <h1 class="who" data-aos="fade">Wait, Who??</h1>
-            <p class="aboutp" data-aos="fade">My name is Akhilesh Balaji, and I have an interest in Science and Technology. I also dabble in graphic design, at times. I currently study in 8th grade at Neev Academy, India. I am the CEO, Founder, and editor of a science magazine called
-                The Geekly, and also own a science - related YouTube Channel. I am also officially proficient in Python, a programming language. I enjoy science and technology, and I aspire to integrate some of these things with politics, healthcare and
-                the environment, to create a more sustainable and easier lifestyle for the denizens of this earth. It's just quintessential me: to integrate two topics or subjects that I enjoy. I hope to learn many new things about the mysteries of the
-                universe that nature hides from us, and spread this knowledge to others as well. On this website, you can find some of my work. <a class="special__a" href="https://www.youtube.com/watch?v=5Zh9NeEcQxE">Here's</a> a video about me. Have
-                a look. Click <a href="work.html" class="special__a">here</a> to view my work. To contact me, click <a class="special__a" href="./contact.html">here</a>.
-            </p>
-    </div>
-    </section>
+        <div class="clear"></div>
+        <div class="workItem" id="Textylic">
+            <div class="cross"><span>close</span></div>
+            <a href="./Textylic">
+                <div class="imageWorkItem textylicImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>Textylic App</h1>
+                    <p>Earlier this year, I completed a Udemy course about Python. I decided to put this to some use, and create something useful and functional with it. So, I made Textylic: A sticky notes app. It has lots of new features, and I learnt a
+                        lot along the way. The project is open-source, too. Click the image on the left to view the project, and download the app!</p>
+                </div>
+            </div>
+        </div>
+        <div class="workItem" id="Python">
+            <div class="cross"><span>close</span></div>
+            <a href="https://www.udemy.com/certificate/UC-fb2984ec-aaa6-438c-8207-6b785cc071cf/">
+                <div class="imageWorkItem pythonImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>Python Profeciency</h1>
+                    <p>I am officially proficient in Python! I have completed a Python Course called "The Python Bible" on Udemy. Overall, it has been a great learning journey for me. I had some experience with Python before, but I never had as much knowledge
+                        as this! I went from a Baby Conversation Simulator to explore loops to building my own Bank! Click on the image to the left to view my certificate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="workItem" id="SISHack">
+            <div class="cross"><span>close</span></div>
+            <a href="https://scratch.mit.edu/projects/296252550/">
+                <div class="imageWorkItem SISImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>Stonehill Hackathon</h1>
+                    <p>The Neev Academy team won 2nd place at the Stonehill International School Hackathon, Junior Team, 2019. The project was based on the theme "education". I was a part of this team, and, personally, it was a great learning journey. Below,
+                        you can have a look at the work of our team, NextGen. Overall, it was an enriching journey, from staying overnight at a school, alone, where I developed Self-Management Skills. The image to the left will take you to see our project.</p>
+                </div>
+            </div>
+        </div>
+        <div class="workItem" id="TheGeekly">
+            <div class="cross"><span>close</span></div>
+            <a href="https://www.thegeekly.net">
+                <div class="imageWorkItem TheGeeklyImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>The Geekly</h1>
+                    <p>I created The Geekly, because I wanted some sort of outlet to express my ideas and feelings about science. I also wanted to try integrating different concepts, when I created this. That's where design came in. The Geekly is free, you
+                        can check it out here. I feel that scientists will never be able to know everything there is to know. Summed up in the wise words of Chinese philosopher Confucius, "He who knows all the answers has not been asked all the questions".
+                        Click the image to the left to learn more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="workItem" id="YTChannel">
+            <div class="cross"><span>close</span></div>
+            <a href="https://www.youtube.com/channel/UCameFaM8x1vL_onYtV8ONdw">
+                <div class="imageWorkItem ytchannelImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>YT Channel</h1>
+                    <p>My YouTube Channel focuses on scientific and technological developments, and I talk about a few higher-level Scientific concepts. My first video was published in September 2018, and was about Atoms. At the time, I was in the 5th Grade.
+                        Since then, my videos have evolved to be more professional and educational. Click the image on the left to have a look.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact" data-aos="fade-in">
+            <h1 style="text-align: center;">Get in
+                <grad8>touch!</grad8>
+            </h1>
+            <h2 class="email" onclick="location.href='mailto:akhilesh.balaji.bangalore@gmail.com?subject=%7BYour%20subject%20here%7D'"><u>akhilesh.balaji.bangalore@gmail.com</u></h2>
+        </div>
 
+        <div class="footer">
+            <div class="colFoot col1">
+                <p class="copyright" onclick="location.href='#'">© Copyright 2020 Akhilesh Balaji<br><br>All rights reserved.</p>
+            </div>
+        </div>
 
-    <!-- partial -->
-    <script src="./menuscript.js"></script>
-    <script>
-        var textWrapper = document.querySelector('.ml3');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
-        anime.timeline({
-                loop: false
-            })
-            .add({
-                targets: '.ml3 .letter',
-                opacity: [0, 1],
-                easing: "easeInOutQuad",
-                duration: 2250,
-                delay: (el, i) => 150 * (i + 1)
+        <!-- Change color of back to top btn -->
+        <script>
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    if ($(document).scrollTop() > 500) {
+                        $("#backToTop").css('visibility', 'visible');
+                    } else {
+                        $("#backToTop").css('visibility', 'hidden');
+                    }
+
+                    const topBtn = document.querySelector('.backToTopBtn');
+                    const worksDiv = document.getElementById("work");
+                    const contactDiv = document.getElementById("contact");
+
+                    if ($(document).scrollTop() > ((window.innerHeight) * 1.9) && ($(document).scrollTop() < ((window.innerHeight) * 1.9) + (parseInt(worksDiv.offsetHeight)) - 1000)) {
+                        topBtn.classList.remove("color12");
+                        topBtn.classList.remove("color15");
+                        topBtn.classList.add("color14");
+                    } else if ($(document).scrollTop() >= ((window.innerHeight) * 1.9) + (parseInt(worksDiv.offsetHeight)) - 1000) {
+                        topBtn.classList.remove("color12");
+                        topBtn.classList.remove("color14");
+                        topBtn.classList.add("color15");
+                    } else {
+                        topBtn.classList.remove("color14");
+                        topBtn.classList.remove("color15");
+                        topBtn.classList.add("color12");
+                    }
+
+                    var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+                    // if ($(document).scrollTop() > 100 && (scrollBottom >= $(window).height())) {
+                    //     $(".downloadButton").css('visibility', 'visible');
+
+                    // } else {
+                    //     $(".downloadButton").css('visibility', 'hidden');
+                    // }
+                });
             });
-    </script>
+        </script>
+
+        <!-- The functions, mainly the popup -->
+        <script>
+            function modURL(thingToReplace) {
+                let stateObj = {
+                    id: "100"
+                };
+                window.history.replaceState(stateObj,
+                    "Popup", thingToReplace);
+            }
+
+            // Works popup
+            function showPopup(popupElementId) {
+                $(popupElementId).css('visibility', 'visible');
+                $("body").css('overflow', 'hidden');
+                $(popupElementId).animate({
+                    opacity: "1"
+                });
+                $("#backToTop").css('visibility', 'hidden');
+
+                modURL(popupElementId)
+            }
+
+            function showPopupURL(elID) {
+                if (window.location.href.indexOf(elID) > -1) {
+                    $(elID).css('visibility', 'visible');
+                    $(elID).animate({
+                        opacity: "1"
+                    });
+                }
+            }
+
+            $(document).ready(function() {
+                showPopupURL("#Textylic");
+                showPopupURL("#Python");
+                showPopupURL("#SISHack");
+                showPopupURL("#TheGeekly");
+                showPopupURL("#YTChannel");
+            });
+
+            // Close popup
+            $(document).ready(function() {
+                $(".cross").click(function() {
+                    $(".workItem").animate({
+                        opacity: "0"
+                    });
+                    setTimeout(function() {
+                        $(".workItem").css('visibility', 'hidden');
+                        $("#backToTop").css('visibility', 'visible');
+                        $("body").css('overflow', 'scroll');
+                    }, 150);
+                    modURL(" ")
+                });
+            });
+        </script>
 </body>
-<script src="./curscript.js"></script>
+
+<!-- Cursor Animation -->
 <script>
-    AOS.init({
-        duration: 1200,
-    });
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    })
+
+    document.addEventListener('click', () => {
+        cursor.classList.add("expand");
+
+        setTimeout(() => {
+            cursor.classList.remove("expand");
+        }, 500)
+    })
+</script>
+
+<script>
+    AOS.init();
 </script>
 
 </html>
