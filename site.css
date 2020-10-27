@@ -407,11 +407,11 @@ h1.abtHead {
 .styleOne {
     margin-top: 15px;
     margin-bottom: 20px;
-    width: 345.6px;
+    width: 27vw;
     float: left;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 320px;
+    height: 28vw;
     border-radius: 10px;
     padding: 0;
     margin-left: 2vw;
@@ -424,9 +424,9 @@ h1.abtHead {
     background-size: cover;
     margin-top: 15px;
     margin-bottom: 20px;
-    width: 345.6px;
+    width: 27vw;
     float: right;
-    height: 320px;
+    height: 28vw;
     border-radius: 10px;
     margin-right: 2vw;
     padding: 0;
@@ -448,6 +448,7 @@ h1.abtHead {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 .nothingHere {
@@ -456,6 +457,7 @@ h1.abtHead {
 
 .child h1 {
     opacity: 0;
+    font-size: 9vh;
     transition: opacity .1s linear;
     text-align: center;
 }
@@ -496,7 +498,7 @@ h1.abtHead {
     padding-top: 2vh;
     padding: 10px;
     overflow: hidden;
-    width: 768px;
+    width: 60vw;
     height: fit-content;
     display: block;
     margin-left: auto;
