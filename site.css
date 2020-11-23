@@ -217,7 +217,7 @@ grad5 {
 }
 
 grad6 {
-    background: linear-gradient(to right, #FF6273, #FC9445);
+    background: linear-gradient(to right, #4CB6F9, #7E42DB);
     -webkit-background-clip: text;
     font-weight: bold;
     -webkit-text-fill-color: transparent;
@@ -346,7 +346,7 @@ button.color13 {
 }
 
 button.color14 {
-    background-image: linear-gradient(to right, #FF6273, #FC9445, #FF6273, #FC9445);
+    background-image: linear-gradient(to right, #4CB6F9, #7E42DB, #4CB6F9, #7E42DB);
     box-shadow: 0 5px 15px #ff62722d;
 }
 
