@@ -49,9 +49,17 @@
             <grad6>Work</grad6>
         </h1>
         <div class="allCardsWork">
-            <div class="styleOne firstCard" onclick="" data-aos="fade-up">
+            <!-- <div class="styleOne firstCard" onclick="" data-aos="fade-up">
                 <div class="nothingHere child">
                     <h1>Coming Soon!</h1>
+                </div>
+            </div> -->
+            <div class="styleOne firstCard pywidget" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Dec 8, 2020</p>
+                </div>
+                <div class="child" onclick="showPopup('#PyWidget')">
+                    <h1>PyWidget</h1>
                 </div>
             </div>
             <div class="styleTwo firstCard textylic" onclick="" data-aos="fade-up">
@@ -96,6 +104,23 @@
             </div>
         </div>
         <div class="clear"></div>
+        <div class="workItem" id="PyWidget">
+            <div class="cross"><span>close</span></div>
+            <a href="https://github.com/akhilesh-balaji/PyWidget">
+                <div class="imageWorkItem pywidgetImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>PyWidget</h1>
+                    <p>When I was making Textylic, I searched long and hard for a tool that would help me create a desktop widget, but was unable to find one. So, I created my own code and hosted it on GitHub for others to use and modify. I give you... PyWidget!
+                        To know more, click on the image to the right.</p>
+                </div>
+            </div>
+        </div>
         <div class="workItem" id="Textylic">
             <div class="cross"><span>close</span></div>
             <a href="./Textylic">
@@ -270,6 +295,7 @@
             }
 
             $(document).ready(function() {
+                showPopupURL("#PyWidget");
                 showPopupURL("#Textylic");
                 showPopupURL("#Python");
                 showPopupURL("#SISHack");

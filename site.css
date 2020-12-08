@@ -556,6 +556,12 @@ h1.abtHead {
     clear: both;
 }
 
+.pywidget .child {
+    background: linear-gradient(to right, #18161834, #18161834), url(./images/PyWidget.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 .textylic .child {
     background: url(https://repository-images.githubusercontent.com/293812209/9e7efa80-f5bc-11ea-8ae4-639a7b7cfd59);
     background-size: 120%;
@@ -738,6 +744,11 @@ h1.abtHead {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.pywidgetImage {
+    background-image: url(./images/PyWidget.jpg);
+    background-position: center center;
 }
 
 .textylicImage {
