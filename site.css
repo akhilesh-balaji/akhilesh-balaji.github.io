@@ -1,6 +1,6 @@
 body {
-    background-color: #181618;
-    /* background-color: #19161A; */
+    /* background-color: #181618; */
+    background-color: #111111;
     overflow-x: hidden;
     scrollbar-width: none;
     padding: 0;
@@ -54,7 +54,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: #19161ac7;
+    background-color: #111111b6;
     overflow: hidden;
     width: 100%;
     backdrop-filter: blur(10px);
@@ -160,7 +160,7 @@ html {
     color: white;
     margin: 0%;
     margin-top: 5vh;
-    font-size: 25vh;
+    font-size: 19vh;
 }
 
 h1 {
@@ -845,4 +845,20 @@ h2 {
 .colFoot {
     display: block;
     float: left;
+}
+
+.canvas-background-3d {
+    width: 100%;
+    height: 600px;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.canvas-background-3d canvas {
+    outline: 0;
+    border: none;
+    width: 100%!important;
+    height: 100%!important;
+    object-fit: cover;
+    object-position: center
 }
