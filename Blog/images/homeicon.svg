@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="185.96428mm"
+   height="154.96982mm"
+   viewBox="0 0 185.96428 154.96982"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="C:\Users\Akhilesh\Downloads\Latex.css\images\homeicon.png"
+   inkscape:export-xdpi="119.877"
+   inkscape:export-ydpi="119.877"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="homeicon.svg">
+  <title
+     id="title1010">Home</title>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="320.32744"
+     inkscape:cy="317.29948"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Home</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(217.71732,-132.20569)">
+    <path
+       d="m -186.72313,287.17551 v -61.98812 l 61.98812,-61.98812 61.988122,61.98812 v 61.98812 h -37.19308 V 225.18739 H -149.5304 v 61.98812"
+       style="fill:#1B1818;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12.3976"
+       id="path911" />
+    <path
+       d="m -211.51852,225.18739 86.78351,-86.78316 86.783162,86.78316"
+       style="fill:none;stroke:#1B1818;stroke-width:12.3976;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path913" />
+  </g>
+</svg>
