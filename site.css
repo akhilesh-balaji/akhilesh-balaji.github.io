@@ -871,6 +871,17 @@ h2 {
         text-align: center;
         visibility: visible;
     }
+    .cross {
+        position: absolute;
+        font-family: "Material Icons";
+        top: 1vh;
+        font-size: 4vh;
+        cursor: pointer;
+        left: 1.5vw;
+        opacity: 0.5;
+        transition: opacity .3s linear;
+        color: white;
+    }
     /* .textWorkItemContents p,
     .textWorkItemContents h1 {
         display: block;
