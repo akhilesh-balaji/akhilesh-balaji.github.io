@@ -13,6 +13,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel='stylesheet' href='./site.css'>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="icon" href="./images/icons/icon.ico">
 </head>
 
@@ -56,12 +57,28 @@
                     <h1>Coming Soon!</h1>
                 </div>
             </div> -->
-            <div class="styleOne firstCard pywidget" onclick="" data-aos="fade-up">
+            <div class="styleOne firstCard geometryy" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Mar 19, 2021</p>
+                </div>
+                <div class="child" onclick="showPopup('#Geometryy')">
+                    <h1>Geometryy</h1>
+                </div>
+            </div>
+            <div class="styleTwo firstCard pywidget" onclick="" data-aos="fade-up">
                 <div class="onHoverPopup">
                     <p>Dec 8, 2020</p>
                 </div>
                 <div class="child" onclick="showPopup('#PyWidget')">
                     <h1>PyWidget</h1>
+                </div>
+            </div>
+            <div class="styleOne firstCard latex" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Oct 30, 2020</p>
+                </div>
+                <div class="child" onclick="showPopup('#LaTeX')">
+                    <h1>LaTeX Expertise</h1>
                 </div>
             </div>
             <div class="styleTwo firstCard textylic" onclick="" data-aos="fade-up">
@@ -106,6 +123,42 @@
             </div>
         </div>
         <div class="clear"></div>
+        <div class="workItem" id="Geometryy">
+            <div class="cross"><span>close</span></div>
+            <a href="https://github.com/akhilesh-balaji/Geometryy">
+                <div class="imageWorkItem geometryyImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>Geometryy</h1>
+                    <p>My mathematics class recently covered transformations on the Cartesian's plane. I was handed a problem in which the pre-image coordinates and the image coordinates of a triangle were given, and I was asked to describe the transformation
+                        that had occurred. The trial-and-error method to describe the transformation would simply not work, as there are different transformations with countless different factors that could have occurred. There are, of course, methods
+                        to do this manually. But, this was a tedious process, and there were no existing tools to do this. Tools like GeoGebra can conduct a transformation, but not describe one. This is why I used my knowledge of Python and mathematics,
+                        and created a tool to accurately describe transformations. <i>Note: This is intended merely as an experiment.</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="workItem" id="LaTeX">
+            <div class="cross"><span>close</span></div>
+            <a href="./files/Feynman Diagrams.pdf">
+                <div class="imageWorkItem latexImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>LaTeX Expertise</h1>
+                    <p>LaTeX is a typesetting system that lets one focus on the content, rather than the aesthetics. I've been using LaTeX for almost all the documents that I create, be it creating Feynman Diagrams using <code>TikzFeynman</code>, drawing
+                        Lewis Dot structures on <code>Chemfig</code>, or simply digitizing math for homework assignments, usually on <code>amsmath</code>. Click to the left to view a LaTeX document I created while practicing Feynman Diagrams.</p>
+                </div>
+            </div>
+        </div>
         <div class="workItem" id="PyWidget">
             <div class="cross"><span>close</span></div>
             <a href="https://github.com/akhilesh-balaji/PyWidget">
@@ -302,6 +355,8 @@
             }
 
             $(document).ready(function() {
+                showPopupURL("#Geometryy");
+                showPopupURL("#LaTeX");
                 showPopupURL("#PyWidget");
                 showPopupURL("#Textylic");
                 showPopupURL("#Python");
@@ -344,6 +399,7 @@
     })
 </script>
 
+<!-- Animate on Scroll -->
 <script>
     AOS.init();
 </script>

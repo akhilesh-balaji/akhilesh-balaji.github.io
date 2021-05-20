@@ -583,6 +583,18 @@ h1.abtHead {
     clear: both;
 }
 
+.geometryy .child {
+    background: linear-gradient(to right, #18161834, #18161834), url(./images/Geomtryy\ Mockup.jpg);
+    background-size: cover;
+    background-position: 500px 350px;
+}
+
+.latex .child {
+    background: linear-gradient(to right, #18161834, #18161834), url(https://physicsworld.com/wp-content/uploads/2013/01/PW-2013-01-feature-Steele-frontis.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 .pywidget .child {
     background: linear-gradient(to right, #18161834, #18161834), url(./images/PyWidget.jpg);
     background-size: cover;
@@ -690,6 +702,16 @@ h1.abtHead {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.geometryyImage {
+    background-image: url(./images/Geomtryy\ Mockup.jpg);
+    background-position: center center;
+}
+
+.latexImage {
+    background-image: url(https://physicsworld.com/wp-content/uploads/2013/01/PW-2013-01-feature-Steele-frontis.jpg);
+    background-position: center center;
 }
 
 .pywidgetImage {
