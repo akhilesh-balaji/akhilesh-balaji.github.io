@@ -93,6 +93,11 @@ body {
     justify-content: center;
 }
 
+a.disabled {
+    pointer-events: none;
+    cursor: disabled;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -583,6 +588,12 @@ h1.abtHead {
     clear: both;
 }
 
+.javascript .child {
+    background: linear-gradient(to right, #18161834, #18161834), url(https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80);
+    background-size: cover;
+    background-position: center center;
+}
+
 .geometryy .child {
     background: linear-gradient(to right, #18161834, #18161834), url(./images/Geomtryy\ Mockup.jpg);
     background-size: cover;
@@ -702,6 +713,11 @@ h1.abtHead {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.javascriptImage {
+    background-image: url(https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80);
+    background-position: center center;
 }
 
 .geometryyImage {

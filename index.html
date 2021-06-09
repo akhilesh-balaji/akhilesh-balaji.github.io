@@ -52,12 +52,20 @@
             <grad6>Work</grad6>
         </h1>
         <div class="allCardsWork">
-            <!-- <div class="styleOne firstCard" onclick="" data-aos="fade-up">
+            <div class="styleOne firstCard" onclick="" data-aos="fade-up">
                 <div class="nothingHere child">
                     <h1>Coming Soon!</h1>
                 </div>
-            </div> -->
-            <div class="styleOne firstCard geometryy" onclick="" data-aos="fade-up">
+            </div>
+            <div class="styleTwo firstCard javascript" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Jun 8, 2021</p>
+                </div>
+                <div class="child" onclick="showPopup('#JavaScript')">
+                    <h1>JavaScript Adept</h1>
+                </div>
+            </div>
+            <div class="styleOne geometryy" onclick="" data-aos="fade-up">
                 <div class="onHoverPopup">
                     <p>Mar 19, 2021</p>
                 </div>
@@ -122,7 +130,26 @@
                 </div>
             </div>
         </div>
+        <!-- Popups -->
         <div class="clear"></div>
+        <div class="workItem" id="JavaScript">
+            <div class="cross"><span>close</span></div>
+            <a href="https://www.udemy.com/certificate/UC-ceedba0c-cd45-49e1-896c-ecc8f6b450b8/">
+                <div class="imageWorkItem javascriptImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>JavaScript Adept</h1>
+                    <p>On 8 June, 2021, I completed a JavaScript course. I already knew a bit of JavaScript befoe this; I needed it to create this website, but I never had an in-depth understanding of JavaScript as a dynamic language, and all the features
+                        specific to it. Now that I have completed the course, I can apply my knowledge of JavaScript to creating applications on the web using frameworks such as React.js. JavaScript is a fundamental for web development. Click the image
+                        to the left to view my certificate.</p>
+                </div>
+            </div>
+        </div>
         <div class="workItem" id="Geometryy">
             <div class="cross"><span>close</span></div>
             <a href="https://github.com/akhilesh-balaji/Geometryy">
@@ -271,7 +298,7 @@
 
         <div class="footer">
             <div class="colFoot">
-                <p class="copyright" onclick="location.href='#'">© Copyright 2021 Akhilesh Balaji<br><br>All rights reserved.</p>
+                <p class="copyright" onclick="location.href='#'">© Copyright 2020–2021 Akhilesh Balaji<br><br>All rights reserved.</p>
             </div>
         </div>
 
@@ -337,24 +364,27 @@
             function showPopup(popupElementId) {
                 $(popupElementId).css('visibility', 'visible');
                 $("body").css('overflow', 'hidden');
+                $("#menubar a").attr('style', 'pointer-events: none;');
+                $("#backToTop").css('visibility', 'hidden');
                 $(popupElementId).animate({
                     opacity: "1"
                 });
-                $("#backToTop").css('visibility', 'hidden');
 
                 modURL(popupElementId)
             }
 
             function showPopupURL(elID) {
                 if (window.location.href.indexOf(elID) > -1) {
-                    $(elID).css('visibility', 'visible');
-                    $(elID).animate({
-                        opacity: "1"
-                    });
+                    // $(elID).css('visibility', 'visible');
+                    // $(elID).animate({
+                    //     opacity: "1"
+                    // });
+                    showPopup(elID)
                 }
             }
 
             $(document).ready(function() {
+                showPopupURL("#JavaScript");
                 showPopupURL("#Geometryy");
                 showPopupURL("#LaTeX");
                 showPopupURL("#PyWidget");
@@ -373,6 +403,7 @@
                     });
                     setTimeout(function() {
                         $(".workItem").css('visibility', 'hidden');
+                        $("#menubar a").attr('style', '');
                         $("#backToTop").css('visibility', 'visible');
                         $("body").css('overflow', 'scroll');
                     }, 150);
