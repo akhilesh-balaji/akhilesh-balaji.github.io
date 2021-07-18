@@ -8,10 +8,10 @@
 }
 
 body {
-    /* background-color: #181618; */
     background-color: #111111;
     overflow-x: hidden;
     scrollbar-width: none;
+    color: white;
     padding: 0;
     margin: 0;
 }
@@ -106,6 +106,10 @@ html {
     scroll-behavior: smooth;
 }
 
+li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .cursor {
     width: 20px;
     height: 20px;
@@ -190,6 +194,12 @@ h1 {
     font-family: 'Inter', sans-serif;
     color: white;
     font-size: 10vh;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 3vh;
 }
 
 p {
