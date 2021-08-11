@@ -810,17 +810,10 @@ h2 {
 }
 
 .footer {
-    height: 20vh;
+    display: block;
     overflow: auto;
+    /* overflow: visible; */
     background-color: rgba(0, 0, 0, 0.308);
-}
-
-.footer img.footerLogo {
-    position: relative;
-    opacity: 0.5;
-    left: 2vw;
-    cursor: pointer;
-    transition: opacity .5s linear;
 }
 
 .footer p.copyright {
@@ -840,6 +833,11 @@ h2 {
 .colFoot {
     display: block;
     float: left;
+}
+
+.footerImg {
+    float: right;
+    padding: 20px;
 }
 
 
@@ -930,6 +928,11 @@ h2 {
         opacity: 0.5;
         transition: opacity .3s linear;
         color: white;
+    }
+    .footerImg {
+        float: left;
+        padding-left: 10px;
+        padding-bottom: 40px;
     }
     /* .textWorkItemContents p,
     .textWorkItemContents h1 {
