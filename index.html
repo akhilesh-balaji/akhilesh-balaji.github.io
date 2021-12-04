@@ -52,9 +52,17 @@
             <grad6>Work</grad6>
         </h1>
         <div class="allCardsWork">
-            <div class="styleOne firstCard" onclick="" data-aos="fade-up">
+            <!-- <div class="styleOne firstCard" onclick="" data-aos="fade-up">
                 <div class="nothingHere child">
                     <h1>Coming Soon!</h1>
+                </div>
+            </div> -->
+            <div class="styleOne firstCard racecar" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Nov 24, 2021</p>
+                </div>
+                <div class="child" onclick="showPopup('#RACECAR')">
+                    <h1>RACECAR Course</h1>
                 </div>
             </div>
             <div class="styleTwo firstCard javascript" onclick="" data-aos="fade-up">
@@ -132,6 +140,25 @@
         </div>
         <!-- Popups -->
         <div class="clear"></div>
+        <div class="workItem" id="RACECAR">
+            <div class="cross"><span>close</span></div>
+            <a href="#" class="racecarlink">
+                <div class="imageWorkItem RacecarImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>RACECAR Course</h1>
+                    <p>On November 22nd, I successfully completed the Autonomous Mini-RACECAR Robotics Course with a final score of 97%. The course was held over a six-week long period, and organized by Learn With Leaders. Each week consisted of a set of
+                        live sessions where I could interact with the course instructors, as I made my way through each challenge, or "lab". The curriculum was MIT Beaver Works' rigorous BWSI STEM curriculum. I learnt a lot from this course, both theoretically
+                        and practically, from the use and disadvantages of the LIDAR to implementing proportional control. The algorithm was tested through a digital simulation of the robotic car. Clicking to the left will lead you to the course homepage,
+                        my participation certificate, and my achievement certificate.</p>
+                </div>
+            </div>
+        </div>
         <div class="workItem" id="JavaScript">
             <div class="cross"><span>close</span></div>
             <a href="https://www.udemy.com/certificate/UC-ceedba0c-cd45-49e1-896c-ecc8f6b450b8/">
@@ -313,6 +340,16 @@
         <script>
             jQuery(".landingpage h1").fitText(0.7);
         </script>
+        <!-- Make links open multiple tabs -->
+        <script>
+            $("a.racecarlink").click(function(e) {
+                alert("Please click 'Allow Popups' to open all the relevant links");
+                e.preventDefault();
+                window.open("https://llx.mit.edu/certificates/e595e83893584536b4f6677e30b905fb");
+                window.open("https://learnwithleaders.com/miniracecar");
+                window.open("./files/AKHILESH BALAJI - Mini Racecar.pdf");
+            });
+        </script>
         <!-- Change color of back to top btn -->
         <script>
             $(document).ready(function() {
@@ -386,6 +423,7 @@
             }
 
             $(document).ready(function() {
+                showPopupURL("#RACECAR");
                 showPopupURL("#JavaScript");
                 showPopupURL("#Geometryy");
                 showPopupURL("#LaTeX");
