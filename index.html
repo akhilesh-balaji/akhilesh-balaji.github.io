@@ -342,12 +342,23 @@
         </script>
         <!-- Make links open multiple tabs -->
         <script>
+            function pop(url) {
+                n = window.open(url, '_blank');
+                if (n == null) {
+                    return true;
+                }
+                return false;
+            };
             $("a.racecarlink").click(function(e) {
-                alert("Please click 'Allow Popups' to open all the relevant links");
                 e.preventDefault();
-                window.open("https://llx.mit.edu/certificates/e595e83893584536b4f6677e30b905fb");
-                window.open("https://learnwithleaders.com/miniracecar");
-                window.open("./files/AKHILESH BALAJI - Mini Racecar.pdf");
+
+                a = window.open("https://llx.mit.edu/certificates/e595e83893584536b4f6677e30b905fb");
+                b = window.open("https://learnwithleaders.com/miniracecar");
+                c = window.open("./files/AKHILESH BALAJI - Mini Racecar.pdf");
+
+                if (a == null || b == null || c == null) {
+                    alert("Please allow popups to open all the relevant links");
+                }
             });
         </script>
         <!-- Change color of back to top btn -->
