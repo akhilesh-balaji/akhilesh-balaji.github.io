@@ -16,6 +16,17 @@ body {
     margin: 0;
 }
 
+.easteregg {
+    /* display: none; */
+    position: fixed;
+    bottom: 101vh;
+    right: 10px;
+}
+
+.egg {
+    font-size: 20vh;
+}
+
 #menubar a {
     padding-top: 2vh;
     padding-bottom: 2vh;
