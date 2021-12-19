@@ -21,6 +21,7 @@ body {
     position: fixed;
     bottom: 101vh;
     right: 10px;
+    z-index: 9999;
 }
 
 .egg {
