@@ -52,11 +52,19 @@
             <grad6>Work</grad6>
         </h1>
         <div class="allCardsWork">
-            <!-- <div class="styleOne firstCard" onclick="" data-aos="fade-up">
+            <div class="styleOne firstCard" onclick="" data-aos="fade-up">
                 <div class="nothingHere child">
                     <h1>Coming Soon!</h1>
                 </div>
-            </div> -->
+            </div>
+            <div class="styleTwo firstCard projectsalus" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Nov 26, 2021</p>
+                </div>
+                <div class="child" onclick="showPopup('#ProjectSalus')">
+                    <h1>Project Salus</h1>
+                </div>
+            </div>
             <div class="styleOne firstCard racecar" onclick="" data-aos="fade-up">
                 <div class="onHoverPopup">
                     <p>Nov 24, 2021</p>
@@ -140,6 +148,25 @@
         </div>
         <!-- Popups -->
         <div class="clear"></div>
+        <div class="workItem" id="ProjectSalus">
+            <div class="cross"><span>close</span></div>
+            <a href="./files/Akhilesh Balaji Project Salus.pdf">
+                <div class="imageWorkItem salusImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>Project Salus</h1>
+                    <p>On 26 November 2021, I, along with another team member, won a climate change-themed science fest organized by Christ Junior College called Project Salus. It consisted of two parts. The first consisted of climate change-themed science
+                        challenges which were time-bound and had to be solved using Python within 10 minutes. After we passed this round, we were instructed to create a video about how a particular country was implementing the UNSDGs, which had to be
+                        done at night. Specifically, the time alloted was 10:30 PM–12:30 AM. Then, we had to present this video to the judges, and they asked us questions about the presentation. Overall, it was an enriching experience. Click to the left
+                        to view my certificate.</p>
+                </div>
+            </div>
+        </div>
         <div class="workItem" id="RACECAR">
             <div class="cross"><span>close</span></div>
             <a href="#" class="racecarlink">
@@ -241,9 +268,9 @@
             </a>
             <div class="textWorkItem">
                 <div class="textWorkItemContents">
-                    <h1>Textylic App</h1>
-                    <p>Earlier this year, I completed a Udemy course about Python. I decided to put this to some use, and create something useful and functional with it. So, I made Textylic: A sticky notes app. It has lots of new features, and I learnt a
-                        lot along the way. The project is open-source, too. Click the image on the left to view the project, and download the app!</p>
+                    <h1>Textylic App</h2>
+                        <p>Earlier this year, I completed a Udemy course about Python. I decided to put this to some use, and create something useful and functional with it. So, I made Textylic: A sticky notes app. It has lots of new features, and I learnt
+                            a lot along the way. The project is open-source, too. Click the image on the left to view the project, and download the app!</p>
                 </div>
             </div>
         </div>
@@ -434,6 +461,7 @@
             }
 
             $(document).ready(function() {
+                showPopupURL("#ProjectSalus");
                 showPopupURL("#RACECAR");
                 showPopupURL("#JavaScript");
                 showPopupURL("#Geometryy");

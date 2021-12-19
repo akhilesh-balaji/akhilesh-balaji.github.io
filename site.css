@@ -599,6 +599,12 @@ h1.abtHead {
     clear: both;
 }
 
+.projectsalus .child {
+    background: linear-gradient(to right, #18161834, #18161834), url("./images/ProjectSalus.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
 .racecar .child {
     background: linear-gradient(to right, #18161834, #18161834), url("./images/RACECAR.png");
     background-size: cover;
@@ -732,13 +738,18 @@ h1.abtHead {
     margin-bottom: 0;
 }
 
-.javascriptImage {
-    background-image: url(https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80);
+.salusImage {
+    background-image: url("./images/ProjectSalus.jpg");
     background-position: center center;
 }
 
 .RacecarImage {
     background-image: url("./images/RACECAR.png");
+    background-position: center center;
+}
+
+.javascriptImage {
+    background-image: url(https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=710&q=80);
     background-position: center center;
 }
 
