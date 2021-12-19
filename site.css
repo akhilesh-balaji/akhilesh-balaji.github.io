@@ -17,11 +17,11 @@ body {
 }
 
 .easteregg {
-    /* display: none; */
     position: fixed;
     bottom: 101vh;
     right: 10px;
-    z-index: 9999;
+    z-index: 9998;
+    cursor: pointer;
 }
 
 .egg {

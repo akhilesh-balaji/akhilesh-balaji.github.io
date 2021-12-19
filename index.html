@@ -20,7 +20,7 @@
 <body>
     <div class="cursor"></div>
     <button class="color12 backToTopBtn" id="backToTop" onclick="location.href='#';">arrow_circle_up</button>
-    <div class="easteregg" id="egg">
+    <div class="easteregg" id="egg" onclick="location.href='#';">
         <span class="egg">🥚</span>
     </div>
     <div id="menubar">
@@ -353,7 +353,7 @@
             <h2 class="email" onclick="location.href='mailto:akhilesh.balaji.bangalore@gmail.com?subject=%7BYour%20subject%20here%7D'"><u><span>akhilesh.balaji.bangalore@gmail.com</span></u></h2>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="colFoot">
                 <p class="copyright" onclick="location.href='#'">© Copyright 2020–2021 Akhilesh Balaji<br><br>All rights reserved.</p>
             </div>
@@ -501,14 +501,26 @@
                 $("#egg").animate({
                     bottom: "10px"
                 });
+                doBounce($("#egg"), 1, "40px", 300);
+                doBounce($("#egg"), 1, "07px", 150);
+                $("#backToTop").css('display', 'none');
             }).listen();
-            // var egg = new Egg("up,up,down,down,left,right,left,right,b,a", function() {
-            //     jQuery('#egg').fadeIn(500, function() {
-            //         window.setTimeout(function() {
-            //             jQuery('#egg').hide();
-            //         }, 5000);
-            //     }, "konami-code");
-            // }).listen();
+
+            $("#egg").click(function() {
+                doBounce($(this), 1, "20px", 200);
+                doBounce($(this), 1, "07px", 150);
+            });
+
+            function doBounce(element, times, distance, speed) {
+                for (var i = 0; i < times; i++) {
+                    element.animate({
+                            bottom: "+=" + distance
+                        }, speed)
+                        .animate({
+                            bottom: "-=" + distance
+                        }, speed);
+                }
+            }
         </script>
 </body>
 
