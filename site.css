@@ -611,6 +611,12 @@ h1.abtHead {
     clear: both;
 }
 
+.neevhacks .child {
+    background: linear-gradient(to right, #18161834, #18161834), url("https://images.unsplash.com/photo-1638029202288-451a89e0d55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8");
+    background-size: cover;
+    background-position: center center;
+}
+
 .projectsalus .child {
     background: linear-gradient(to right, #18161834, #18161834), url("./images/ProjectSalus.jpg");
     background-size: cover;
@@ -748,6 +754,11 @@ h1.abtHead {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.nhImage {
+    background-image: url("https://images.unsplash.com/photo-1638029202288-451a89e0d55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-position: center center;
 }
 
 .salusImage {

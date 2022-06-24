@@ -55,9 +55,17 @@
             <grad6>Work</grad6>
         </h1>
         <div class="allCardsWork">
-            <div class="styleOne firstCard" onclick="" data-aos="fade-up">
+            <!-- <div class="styleOne firstCard" onclick="" data-aos="fade-up">
                 <div class="nothingHere child">
                     <h1>Coming Soon!</h1>
+                </div>
+            </div> -->
+            <div class="styleOne firstCard neevhacks" onclick="" data-aos="fade-up">
+                <div class="onHoverPopup">
+                    <p>Mar 12, 2022</p>
+                </div>
+                <div class="child" onclick="showPopup('#NeevHacksAward')">
+                    <h1>Award @ NeevHacks</h1>
                 </div>
             </div>
             <div class="styleTwo firstCard projectsalus" onclick="" data-aos="fade-up">
@@ -129,7 +137,7 @@
                     <p>Mar 23, 2019</p>
                 </div>
                 <div class="child" onclick="showPopup('#SISHack')">
-                    <h1>Stonehill Hackathon</h1>
+                    <h1>Award @ SISHack</h1>
                 </div>
             </div>
             <div class="styleOne lastcard thegeekly" onclick="" data-aos="fade-up">
@@ -151,6 +159,24 @@
         </div>
         <!-- Popups -->
         <div class="clear"></div>
+        <div class="workItem" id="NeevHacksAward">
+            <div class="cross"><span>close</span></div>
+            <a href="./files/NeevHacks Akhilesh_Balaji.pdf">
+                <div class="imageWorkItem nhImage">
+                    <div class="onHoverPopup">
+                        <p>View Project</p>
+                    </div>
+                </div>
+            </a>
+            <div class="textWorkItem">
+                <div class="textWorkItemContents">
+                    <h1>NeevHacks Prize</h1>
+                    <p>On March 12th of 2022, I, along with a team of 3 other members, won the prize for the first runner up, in a hackathon hosted by Neev Academy, <code>NeevHacks</code>. We created a browser extension, written in traditional web development
+                        tools, that would assist students in the management of their time effectively, such that they could complete each of their tasks based on which one was most important, taking into account the total screen time that each task would
+                        add up to, so that we could provide eye and mindfulness breaks in between. One of the hardest parts about creating this was programming the algorithm to order tasks, and decide on the amount of time required for each task.</p>
+                </div>
+            </div>
+        </div>
         <div class="workItem" id="ProjectSalus">
             <div class="cross"><span>close</span></div>
             <a href="./files/Akhilesh Balaji Project Salus.pdf">
@@ -465,6 +491,7 @@
             }
 
             $(document).ready(function() {
+                showPopupURL("#NeevHacksAward");
                 showPopupURL("#ProjectSalus");
                 showPopupURL("#RACECAR");
                 showPopupURL("#JavaScript");
