@@ -10,8 +10,6 @@ import '@fontsource/inter/800.css';
 import React from 'react';
 import { ChakraProvider, Container } from '@chakra-ui/react';
 import { useMediaQuery } from 'react-responsive';
-import { HiddenEasterEgg } from 'react-hidden-easter-egg';
-import { ConfettiCanvas } from 'react-raining-confetti';
 
 import theme from '../theme/theme';
 import Header from './Header';
@@ -20,6 +18,8 @@ import Footer from './Footer';
 import Work from './work/Work';
 import Contact from './Contact';
 import CodeQuantity from './CodeQuantity';
+import ScrollFade from './ScrollFade';
+import EasterEgg from './EasterEgg';
 
 function App() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -29,22 +29,23 @@ function App() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
   console.log(isBigScreen);
+
   return (
     <ChakraProvider theme={theme}>
       <Container
         maxW={'container.xl'}
         fontSize={!isBigScreen ? '0.88em' : '1em'}
+        overflowX={"clip"}
       >
-        <HiddenEasterEgg
-          code={['c', 'o', 'n', 'f', 'e', 't', 't', 'i']}
-          resetEggMs={10000}
-        >
-          <ConfettiCanvas active={true} stopAfterMs={5000} />
-        </HiddenEasterEgg>
+        <EasterEgg />
         <Header />
         <LandingPage />
-        <Work />
-        <CodeQuantity />
+        <ScrollFade>
+          <Work />
+        </ScrollFade>
+        <ScrollFade>
+          <CodeQuantity />
+        </ScrollFade>
         <Contact />
         <Footer />
       </Container>

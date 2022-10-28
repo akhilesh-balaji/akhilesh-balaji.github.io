@@ -3,6 +3,7 @@ import WorkItem from "./WorkItem";
 
 import neevHacksLink from '../../files/NeevHacks Akhilesh_Balaji.pdf';
 import salusLink from '../../files/Akhilesh Balaji Project Salus.pdf';
+import sisHackLink from '../../files/SISHack 2022.pdf';
 
 export default function Awards() {
   return (
@@ -27,6 +28,7 @@ export default function Awards() {
         workExtDesc={
           "March 5th was when my team of 5 members won the second place in a 24-hour hackathon organized by Stonehill International School. Of the three themes offered to us, we picked 'Responsible consumption and production.' In accordance with aforesaid theme, our product was a carbon footprint tracker that aimed to motivate the user to reduce their carbon footprint to as low as it could possibly be, taking into account the food that they consumed, how they travelled, &c. The hackathon helped build my collaboration skills as the team leader, working effectively and co-operatively towards a single goal."
         }
+        workLink={sisHackLink}
       />
       <WorkItem
         workTitle={'Project Salus'}

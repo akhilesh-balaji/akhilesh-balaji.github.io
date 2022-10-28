@@ -7,8 +7,15 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Contact() {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)',
+  });
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' });
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
   return (
     <Box borderWidth={0} borderRadius={'xl'} p={'20px'}>
       <Center>
@@ -25,8 +32,8 @@ export default function Contact() {
             </Highlight>
           </Heading>
           <Center>
-              <Link opacity={0.7} href={"mailto:akhilesh.balaji.bangalore@gmail.com"}>
-                <Heading fontSize={"2em"}>akhilesh.balaji.bangalore@gmail.com</Heading>
+              <Link color={"blue.200"} href={"mailto:akhilesh.balaji.bangalore@gmail.com"}>
+                <Heading fontSize={"2em"}>{isPortrait ? "Reach out by 📧!" : "akhilesh.balaji.bangalore@gmail.com"}</Heading>
               </Link>
           </Center>
         </VStack>

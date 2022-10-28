@@ -19,8 +19,8 @@ export default function WorkItem(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box
-      minW="xs"
-      maxW="xs"
+      minW={props.fill ? "99%" : "xs"}
+      maxW={props.fill ? "99%" : "xs"}
       borderWidth="2px"
       borderRadius="lg"
       overflow="hidden"

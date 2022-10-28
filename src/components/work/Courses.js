@@ -47,9 +47,8 @@ export default function Courses() {
             "I completed The Python Bible course, which gave me quite a few insights into the world of programming. The course taught me about fundamental programming concepts and programming paradigms, leading me to explore the application of these principles with Python as my tool. Through the completion of this course, I now know how to program (identifying problems and designing solutions to them) by coding (the low-level system of making a computer understand your instructions), as writing is to typing."
         }
         workLink={"https://www.udemy.com/certificate/UC-fb2984ec-aaa6-438c-8207-6b785cc071cf/"}
+        fill
       />
-      <WorkItem blank />
-      <WorkItem blank />
     </WorkSection>
   );
 }
