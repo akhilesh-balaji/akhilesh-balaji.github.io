@@ -4,6 +4,7 @@ import {
   Center,
   Flex,
   Image,
+  Link,
   Spacer,
   Text,
   VStack,
@@ -24,17 +25,21 @@ export default function Header() {
     if (props.noCenter) {
       return (
         <VStack alignItems={'start'}>
-          <Button variant={'ghost'}>
-            <Text fontSize={'1.2em'}>{props.text}</Text>
-          </Button>
+          <Link href={props.to}>
+            <Button variant={'ghost'}>
+              <Text fontSize={'1.2em'}>{props.text}</Text>
+            </Button>
+          </Link>
         </VStack>
       );
     }
     return (
       <Center h={'35px'}>
-        <Button variant={'ghost'}>
-          <Text fontSize={'1.2em'}>{props.text}</Text>
-        </Button>
+        <Link href={props.to}>
+          <Button variant={'ghost'}>
+            <Text fontSize={'1.2em'}>{props.text}</Text>
+          </Button>
+        </Link>
       </Center>
     );
   }
@@ -53,12 +58,14 @@ export default function Header() {
         bg={'brand.700'}
       >
         <Flex gap={'10px'}>
-          <Image src={logo} h={'35px'} w={'auto'} />
-          <HeaderItem text={'About'} />
-          <HeaderItem text={'Work'} />
-          <HeaderItem text={'Profile'} />
-          <HeaderItem text={'Contact'} />
-          <HeaderItem text={'Articles'} />
+          <a href="#landing">
+            <Image src={logo} h={'35px'} w={'auto'} />
+          </a>
+          <HeaderItem text={'About'} to={'#landing'} />
+          <HeaderItem text={'Work'} to={"#work"} />
+          <HeaderItem text={'Profile'} to={"#profile"} />
+          <HeaderItem text={'Contact'} to={"#contact"} />
+          <HeaderItem text={'Articles'} to={"https://www.thegeekly.net/"} />
         </Flex>
       </Box>
     );
@@ -68,7 +75,7 @@ export default function Header() {
         p={'8px'}
         bg={'brand.700'}
         minH={'55px'}
-        mt={"8px"}
+        mt={'8px'}
         borderRadius={'xl'}
         borderWidth={'2px'}
         minW={'92vw'}
@@ -77,11 +84,11 @@ export default function Header() {
       >
         <Image src={logo} h={'35px'} w={'auto'} position={'fixed'} />
         <HamburgerMenu>
-          <HeaderItem noCenter text={'About'} />
-          <HeaderItem noCenter text={'Work'} />
-          <HeaderItem noCenter text={'Profile'} />
-          <HeaderItem noCenter text={'Contact'} />
-          <HeaderItem noCenter text={'Articles'} />
+          <HeaderItem noCenter text={'About'} to={'#landing'} />
+          <HeaderItem noCenter text={'Work'} to={"#work"} />
+          <HeaderItem noCenter text={'Profile'} to={"#profile"} />
+          <HeaderItem noCenter text={'Contact'} to={"#contact"} />
+          <HeaderItem noCenter text={'Articles'} to={"https://www.thegeekly.net/"} />
         </HamburgerMenu>
       </Box>
     );

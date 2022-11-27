@@ -17,7 +17,7 @@ export default function Contact() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
   return (
-    <Box borderWidth={0} borderRadius={'xl'} p={'20px'}>
+    <Box borderWidth={0} borderRadius={'xl'} p={'20px'} id={"contact"}>
       <Center>
         <VStack>
           <Heading fontSize={'3.5em'} fontWeight={'extrabold'}>
@@ -32,9 +32,16 @@ export default function Contact() {
             </Highlight>
           </Heading>
           <Center>
-              <Link color={"blue.200"} href={"mailto:akhilesh.balaji.bangalore@gmail.com"}>
-                <Heading fontSize={"2em"}>{isPortrait ? "Reach out by 📧!" : "akhilesh.balaji.bangalore@gmail.com"}</Heading>
-              </Link>
+            <Link
+              color={'blue.200'}
+              href={'mailto:akhilesh.balaji.bangalore@gmail.com'}
+            >
+              <Heading fontSize={'2em'}>
+                {isPortrait
+                  ? 'Reach out by 📧!'
+                  : 'akhilesh.balaji.bangalore@gmail.com'}
+              </Heading>
+            </Link>
           </Center>
         </VStack>
       </Center>

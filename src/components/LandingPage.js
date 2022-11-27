@@ -19,14 +19,14 @@ export default function LandingPage() {
   console.log('Is Big Screen? ' + isBigScreen);
 
   return (
-    <Center minH={'100vh'} px={'50px'} pos={'relative'}>
+    <Center minH={'100vh'} px={'50px'} pos={'relative'} id={'landing'}>
       <VStack>
         <Text
           fontWeight={'bold'}
-          fontSize={isPortrait === true ? "1.3em" : '2em'}
+          fontSize={isPortrait === true ? '1.3em' : '2em'}
           width={'100%'}
           mb={'-20px'}
-          pl={isPortrait === true ? "10px" : '20px'}
+          pl={isPortrait === true ? '10px' : '20px'}
           opacity={0.8}
         >
           Greetings, it's me—

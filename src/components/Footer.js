@@ -5,7 +5,8 @@ import {
   IconButton,
   Spacer,
   Text,
-  Center
+  Center,
+  Link
 } from '@chakra-ui/react';
 
 export default function Footer() {
@@ -18,9 +19,15 @@ export default function Footer() {
             </Text>
             </Center>
             <Spacer />
-            <IconButton icon={<FaGithub />} />
-            <IconButton icon={<FaLinkedin />} />
-            <IconButton icon={<FaYoutube />} />
+            <Link href={"https://github.com/akhilesh-balaji"}>
+              <IconButton icon={<FaGithub />} />
+            </Link>
+            <Link href={"https://www.linkedin.com/in/akhilesh-balaji/"}>
+              <IconButton icon={<FaLinkedin />} />
+            </Link>
+            <Link href={"https://www.youtube.com/@akhilesh-balaji"}>
+              <IconButton icon={<FaYoutube />} />
+            </Link>
           </Flex>
         </Box>
     );

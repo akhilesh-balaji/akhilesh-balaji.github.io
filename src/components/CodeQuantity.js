@@ -5,7 +5,7 @@ import Tools from './Tools';
 
 export default function CodeQuantity() {
   return (
-    <Center my={'100px'}>
+    <Center my={'100px'} id={"profile"}>
       <VStack>
         <Heading fontSize={'3.5em'} fontWeight={'extrabold'}>
           <Highlight
