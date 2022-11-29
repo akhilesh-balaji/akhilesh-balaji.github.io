@@ -1,6 +1,6 @@
 const variants = {
     offscreen: {
-        y: 300,
+        y: 100,
         opacity: 0,
     },
     onscreen: {
