@@ -7,7 +7,7 @@ export default function ScrollFade(props) {
           initial="offscreen"
           whileInView="onscreen"
           variants={variants}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: false, amount: 0.3 }}
         >{props.children}</motion.div>
     );
 }

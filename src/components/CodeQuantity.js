@@ -9,7 +9,7 @@ export default function CodeQuantity() {
     <Center my={'100px'} id={"profile"}>
       <VStack>
         <Image src={myImage} width={"160px"} height={"auto"} mt={"20px"} borderRadius={"20px"} display={"none"} />
-        <Heading fontSize={'3.5em'} fontWeight={'extrabold'} mb={"50px"}>
+        <Heading fontSize={'3.5em'} fontWeight={'extrabold'} pb={"30px"}>
           <Highlight
             query={'Profile'}
             styles={{
@@ -26,6 +26,7 @@ export default function CodeQuantity() {
           blockMargin={5}
           color="#236AF9"
           fontSize={16}
+          hideMonthLabels
         />
         <Status />
         <Tools />
