@@ -8,7 +8,7 @@ export default function CodeQuantity() {
   return (
     <Center my={'100px'} id={"profile"}>
       <VStack>
-        <Image src={myImage} width={"160px"} height={"auto"} mt={"20px"} borderRadius={"20px"} />
+        <Image src={myImage} width={"160px"} height={"auto"} mt={"20px"} borderRadius={"20px"} display={"none"} />
         <Heading fontSize={'3.5em'} fontWeight={'extrabold'} mb={"50px"}>
           <Highlight
             query={'Profile'}
