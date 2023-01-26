@@ -33,23 +33,46 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Container
-        maxW={'container.xl'}
-        fontSize={!isBigScreen ? '0.88em' : '1em'}
-        overflowX={'clip'}
+        maxW={'100%'}
+        maxH={'100vh'}
+        // position={"fixed"}
+        background={'brand.700'}
+        backgroundClip={'padding-box'} /* !importanté */
+        border={'solid 5px transparent'} /* !importanté */
+        borderRadius={'20px'}
+        overflowX={'hidden'}
+        _before={{
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0,
+          zIndex: -1,
+          margin: '-5px' /* !importanté */,
+          borderRadius: '20px' /* !importanté */,
+          bgGradient: 'linear-gradient(to-r, blue.300, blue.400)',
+        }}
       >
-        <EasterEgg />
-        <Header />
-        <LandingPage />
-        <Box>
-          <ScrollFade>
-            <Work />
-          </ScrollFade>
-          <ScrollFade>
-            <CodeQuantity />
-          </ScrollFade>
-          <Contact />
-        </Box>
-        <Footer />
+        <Container
+          maxW={'container.xl'}
+          fontSize={!isBigScreen ? '0.88em' : '1em'}
+          overflowX={'clip'}
+        >
+          <EasterEgg />
+          <Header />
+          <LandingPage />
+          <Box>
+            <ScrollFade>
+              <Work />
+            </ScrollFade>
+            <ScrollFade>
+              <CodeQuantity />
+            </ScrollFade>
+            <Contact />
+          </Box>
+          <Footer />
+        </Container>
       </Container>
     </ChakraProvider>
   );
