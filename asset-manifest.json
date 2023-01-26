@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3ced9962.css",
-    "main.js": "/static/js/main.5891d9be.js",
+    "main.js": "/static/js/main.3723ed5a.js",
     "static/media/Akhilesh Balaji Project Salus.pdf": "/static/media/Akhilesh Balaji Project Salus.5da0e3b74bb574f7c3f2.pdf",
     "static/media/IMG_0836 Final.jpg": "/static/media/IMG_0836 Final.66bd6a764498f3035710.jpg",
     "static/media/NeevHacks Akhilesh_Balaji.pdf": "/static/media/NeevHacks Akhilesh_Balaji.7a8ca78f4e4dc0ddb741.pdf",
@@ -73,10 +73,10 @@
     "static/media/inter-vietnamese-400-normal.woff2": "/static/media/inter-vietnamese-400-normal.a1bc9a8f426924c5dea8.woff2",
     "index.html": "/index.html",
     "main.3ced9962.css.map": "/static/css/main.3ced9962.css.map",
-    "main.5891d9be.js.map": "/static/js/main.5891d9be.js.map"
+    "main.3723ed5a.js.map": "/static/js/main.3723ed5a.js.map"
   },
   "entrypoints": [
     "static/css/main.3ced9962.css",
-    "static/js/main.5891d9be.js"
+    "static/js/main.3723ed5a.js"
   ]
 }
