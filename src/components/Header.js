@@ -21,15 +21,16 @@ export default function Header() {
   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' });
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
+
   function HeaderItem(props) {
     if (props.noCenter) {
       return (
         <VStack alignItems={'start'}>
           <Link href={props.to}>
             <Button variant={'ghost'}>
-              <Text fontSize={'1.2em'}>{props.text}</Text>
-            </Button>
-          </Link>
+              <Text fontSize={'1.2em'}> {props.text} </Text>{' '}
+            </Button>{' '}
+          </Link>{' '}
         </VStack>
       );
     }
@@ -37,9 +38,9 @@ export default function Header() {
       <Center h={'35px'}>
         <Link href={props.to}>
           <Button variant={'ghost'}>
-            <Text fontSize={'1.2em'}>{props.text}</Text>
-          </Button>
-        </Link>
+            <Text fontSize={'1.2em'}> {props.text} </Text>{' '}
+          </Button>{' '}
+        </Link>{' '}
       </Center>
     );
   }
@@ -59,14 +60,14 @@ export default function Header() {
       >
         <Flex gap={'10px'}>
           <a href="#landing">
-            <Image src={logo} h={'35px'} w={'auto'} />
-          </a>
-          <HeaderItem text={'About'} to={'#landing'} />
-          <HeaderItem text={'Work'} to={"#work"} />
-          <HeaderItem text={'Profile'} to={"#profile"} />
-          <HeaderItem text={'Contact'} to={"#contact"} />
-          <HeaderItem text={'Articles'} to={"https://www.thegeekly.net/"} />
-        </Flex>
+            <Image src={logo} h={'35px'} w={'auto'} />{' '}
+          </a>{' '}
+          <HeaderItem text={'About'} to={'#landing'} />{' '}
+          <HeaderItem text={'Work'} to={'#work'} />{' '}
+          <HeaderItem text={'Profile'} to={'#profile'} />{' '}
+          <HeaderItem text={'Contact'} to={'#contact'} />{' '}
+          <HeaderItem text={'Articles'} to={'https://www.thegeekly.net/'} />{' '}
+        </Flex>{' '}
       </Box>
     );
   } else {
@@ -81,15 +82,20 @@ export default function Header() {
         minW={'92vw'}
         zIndex={100}
         pos={'fixed'}
+        top={'5px'}
       >
-        <Image src={logo} h={'35px'} w={'auto'} position={'fixed'} />
+        <Image src={logo} h={'35px'} w={'auto'} position={'fixed'} />{' '}
         <HamburgerMenu>
-          <HeaderItem noCenter text={'About'} to={'#landing'} />
-          <HeaderItem noCenter text={'Work'} to={"#work"} />
-          <HeaderItem noCenter text={'Profile'} to={"#profile"} />
-          <HeaderItem noCenter text={'Contact'} to={"#contact"} />
-          <HeaderItem noCenter text={'Articles'} to={"https://www.thegeekly.net/"} />
-        </HamburgerMenu>
+          <HeaderItem noCenter text={'About'} to={'#landing'} />{' '}
+          <HeaderItem noCenter text={'Work'} to={'#work'} />{' '}
+          <HeaderItem noCenter text={'Profile'} to={'#profile'} />{' '}
+          <HeaderItem noCenter text={'Contact'} to={'#contact'} />{' '}
+          <HeaderItem
+            noCenter
+            text={'Articles'}
+            to={'https://www.thegeekly.net/'}
+          />{' '}
+        </HamburgerMenu>{' '}
       </Box>
     );
   }

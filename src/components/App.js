@@ -8,7 +8,7 @@ import '@fontsource/inter/700.css';
 import '@fontsource/inter/800.css';
 
 import React from 'react';
-import { ChakraProvider, Container } from '@chakra-ui/react';
+import { Box, ChakraProvider, Container } from '@chakra-ui/react';
 import { useMediaQuery } from 'react-responsive';
 
 import theme from '../theme/theme';
@@ -35,18 +35,20 @@ function App() {
       <Container
         maxW={'container.xl'}
         fontSize={!isBigScreen ? '0.88em' : '1em'}
-        overflowX={"clip"}
+        overflowX={'clip'}
       >
         <EasterEgg />
         <Header />
         <LandingPage />
-        <ScrollFade>
-          <Work />
-        </ScrollFade>
-        <ScrollFade>
-          <CodeQuantity />
-        </ScrollFade>
-        <Contact />
+        <Box>
+          <ScrollFade>
+            <Work />
+          </ScrollFade>
+          <ScrollFade>
+            <CodeQuantity />
+          </ScrollFade>
+          <Contact />
+        </Box>
         <Footer />
       </Container>
     </ChakraProvider>

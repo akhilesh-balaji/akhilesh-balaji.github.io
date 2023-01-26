@@ -11,13 +11,13 @@ export default function Work() {
         <VStack>
           <Heading fontSize={'3.5em'} fontWeight={'extrabold'}>
             <Highlight
-              query={'Work'}
+              query={['Projects', 'Learning']}
               styles={{
                 bgGradient: 'linear-gradient(to-r, blue.300, blue.400)',
                 bgClip: 'text',
               }}
             >
-              My Work
+              My Projects & Learning
             </Highlight>
           </Heading>
           <Center>
