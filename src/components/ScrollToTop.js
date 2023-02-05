@@ -27,7 +27,7 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <Box>
+    <Box position={"fixed"}>
       {isVisible && (
         <Box p={'10px'}>
           <Tooltip label="Add image" rounded={'md'} placement="left">
