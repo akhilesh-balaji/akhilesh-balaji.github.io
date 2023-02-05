@@ -1,6 +1,9 @@
+import { Text } from '@chakra-ui/react';
+
 import WorkSection from './WorkSection';
 import WorkItem from './WorkItem';
 
+import rbhLink from '../../files/RedBrickHacks_Ashoka_First Prize.pdf';
 import neevHacksLink from '../../files/NeevHacks Akhilesh_Balaji.pdf';
 import salusLink from '../../files/Akhilesh Balaji Project Salus.pdf';
 import sisHackLink from '../../files/SISHack 2022.pdf';
@@ -8,6 +11,23 @@ import sisHackLink from '../../files/SISHack 2022.pdf';
 export default function Awards() {
   return (
     <WorkSection sectionTitle={'Awards'}>
+      <WorkItem
+        workTitle={'First Place at RedBrickHacks Hackathon'}
+        workDesc={
+          'I, along with my team of three classmates, won the all-India RedBrickHacks Hackathon, a 3-day event hosted by the esteemed Ashoka University.'
+        }
+        workDate={'Mar 2022'}
+        workExtDesc={<Text>
+          I am happy to announce that my team and I won the first place in the all-India RedBrickHacks cyberphysical hackathon (high school edition), hosted by Ashoka University, held from 10–13 January 2023. The hackathon consisted of two phases.<br/><br/>
+
+          In the first, teams from across India submitted proposals for a cyberphysical object requiring both software and hardware components, that could be useful to society. This included a detailed literature review. In the second phase, the top 5 teams were invited to Ashoka University's campus to implement their proposal.<br/><br/>
+
+          Our project involved the creation of a vision correcting display, wherein the screen would appear clear to someone with spherical myopia or hyperopia without wearing glasses or contact lenses. This vision correction was integrated into all aspects of the operating system, and could be configured with a GUI.
+          </Text>}
+        fill
+        rbh
+        workLink={rbhLink}
+      />{' '}
       <WorkItem
         workTitle={'Neev Hacks'}
         workDesc={

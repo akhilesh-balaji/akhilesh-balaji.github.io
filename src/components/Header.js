@@ -51,12 +51,15 @@ export default function Header() {
         fontWeight={'semibold'}
         fontSize={'1.2em'}
         pos={'fixed'}
+        transform={"translate(-50%,0%)"}
+        left={"50%"}
         w={'max-width'}
         borderRadius={'xl'}
         borderWidth={'2px'}
         p={'15px'}
         zIndex={100}
-        bg={'brand.700'}
+        bg={'#04041296'}
+        backdropFilter={"blur(10px)"}
       >
         <Flex gap={'10px'}>
           <a href="#landing">

@@ -5,6 +5,17 @@ export default function Courses() {
   return (
     <WorkSection sectionTitle={'Courses'}>
       <WorkItem
+        workTitle={'Math Prq. for QC'}
+        workDesc={
+          'I took up a course to learn complex numbers, linear algebra, and advanced probability, for QC.'
+        }
+        workDate={'Dec 2022'}
+        workExtDesc={
+          'I completed this course so that I would get a more formal and intuitive understanding of quantum computing. Upon completing the course, ideas such as Hilbert Space, the foundations of the coordinate system, and reversible (linear) and non-linear transformations of qubit state became clear to me.'
+        }
+        workLink={"https://www.udemy.com/certificate/UC-1d1ee877-197c-4aea-ba33-f74f04673bb4/"}
+      />
+      <WorkItem
         workTitle={'ReactJS'}
         workDesc={
           'I completed a course about creating web apps using ReactJS and Redux.'
@@ -47,7 +58,7 @@ export default function Courses() {
             "I completed The Python Bible course, which gave me quite a few insights into the world of programming. The course taught me about fundamental programming concepts and programming paradigms, leading me to explore the application of these principles with Python as my tool. Through the completion of this course, I now know how to program (identifying problems and designing solutions to them) by coding (the low-level system of making a computer understand your instructions), as writing is to typing."
         }
         workLink={"https://www.udemy.com/certificate/UC-fb2984ec-aaa6-438c-8207-6b785cc071cf/"}
-        fill
+        alFill
       />
     </WorkSection>
   );

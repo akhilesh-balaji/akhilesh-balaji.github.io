@@ -13,14 +13,15 @@ import {
   ModalBody,
   ModalCloseButton,
   LinkOverlay,
+  Link,
 } from '@chakra-ui/react';
 
 export default function WorkItem(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box
-      minW={props.fill ? "99%" : "xs"}
-      maxW={props.fill ? "99%" : "xs"}
+      minW={props.alFill ? "65.8%" : props.fill ? "99%" : "xs"}
+      maxW={props.alFill ? "65.8%" : props.fill ? "99%" : "xs"}
       borderWidth="2px"
       borderRadius="lg"
       overflow="hidden"
@@ -28,7 +29,8 @@ export default function WorkItem(props) {
       cursor={'pointer'}
       data-group
       _hover={!props.blank ? {
-        bgGradient: 'linear-gradient(to-r, blue.300, blue.400)',
+        bgGradient: props.rbh ? 'linear-gradient(135deg, blue.400, rainbow.100, rainbow.200, rainbow.300, rainbow.500)'
+ : 'linear-gradient(to-r, blue.300, blue.400)',
         color: 'brand.700',
         border: '2px',
         transition: 'background-image 0.34s cubic-bezier(.08,.52,.52,1)',
@@ -43,14 +45,14 @@ export default function WorkItem(props) {
           pos={'absolute'}
           right={'5px'}
           bottom={'5px'}
-          _groupHover={{ color: 'blue.400', bg: 'brand.700' }}
+          _groupHover={{ color: props.rbh ? 'rainbow.500' : 'blue.400', bg: 'brand.700' }}
           onClick={onOpen}
         >
           Read More
         </Button>
         <Badge
           colorScheme={'blue'}
-          _groupHover={{ color: 'blue.400', bg: 'brand.700' }}
+          _groupHover={{ color: props.rbh ? 'rainbow.500' : 'blue.400', bg: 'brand.700' }}
           pos={'absolute'}
           right={'5px'}
           top={'5px'}
@@ -61,7 +63,8 @@ export default function WorkItem(props) {
       <Modal onClose={onClose} isOpen={isOpen} size={'xl'} isCentered>
         <ModalOverlay />
         <ModalContent
-          bg={'brand.400'}
+          bg={'#181825c4'}
+          backdropFilter={"blur(10px)"}
           textAlign={'justify'}
           borderRadius={'xl'}
           borderWidth={'2px'}
@@ -70,11 +73,11 @@ export default function WorkItem(props) {
           <ModalCloseButton />
           <ModalBody>{props.workExtDesc}</ModalBody>
           <ModalFooter>
-            <LinkOverlay href={props.workLink}>
+            <Link href={props.workLink}>
               <Button colorScheme="blue" variant={'outline'}>
                 Open Link/s
               </Button>
-            </LinkOverlay>
+            </Link>
           </ModalFooter>
         </ModalContent>
       </Modal>

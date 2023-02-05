@@ -6,7 +6,7 @@ import Courses from './Courses';
 
 export default function Work() {
   return (
-    <Box borderWidth={0} borderRadius={'xl'} p={'20px'} id={'work'}>
+    <Box borderWidth={0} borderRadius={'xl'} p={'20px'} id={'work'} pt={"100px"}>
       <Center>
         <VStack>
           <Heading fontSize={'3.5em'} fontWeight={'extrabold'}>
