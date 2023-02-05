@@ -20,6 +20,7 @@ import Contact from './Contact';
 import CodeQuantity from './CodeQuantity';
 import ScrollFade from './ScrollFade';
 import EasterEgg from './EasterEgg';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -38,6 +39,7 @@ function App() {
         overflowX={'clip'}
       >
         <EasterEgg />
+        <ScrollToTop />
         <Header />
         <LandingPage />
         <Box>
