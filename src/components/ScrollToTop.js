@@ -30,7 +30,7 @@ export default function ScrollToTop() {
     <Box position={"fixed"}>
       {isVisible && (
         <Box p={'10px'}>
-          <Tooltip label="Add image" rounded={'md'} placement="left">
+          <Tooltip label="Back to Top" rounded={'md'} placement="left">
             <IconButton
               icon={<FaArrowUp />}
               size="lg"
