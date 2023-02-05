@@ -19,7 +19,6 @@ export default function Tools() {
     'https://img.shields.io/badge/jquery%20-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white',
     'https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white',
     'https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white',
-    'https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white',
     'https://img.shields.io/badge/alacritty-F46D01?style=for-the-badge&logo=alacritty&logoColor=white',
     'https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white',
     'https://img.shields.io/badge/VIM-%2311AB00.svg?&style=for-the-badge&logo=vim&logoColor=white',
