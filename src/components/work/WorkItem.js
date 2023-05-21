@@ -22,18 +22,22 @@ export default function WorkItem(props) {
     <Box
       minW={props.alFill ? "65.8%" : props.fill ? "99%" : "xs"}
       maxW={props.alFill ? "65.8%" : props.fill ? "99%" : "xs"}
-      borderWidth="2px"
+      borderWidth="0px"
       borderRadius="lg"
       overflow="hidden"
-      transition={'background-image 0.34s cubic-bezier(.08,.52,.52,1)'}
+      transition={'box-shadow 0.34s cubic-bezier(.08,.52,.52,1)'}
+      // transition={'background-image 0.34s cubic-bezier(.08,.52,.52,1)'}
       cursor={'pointer'}
+      bgGradient={props.rbh ? 'linear-gradient(135deg, blue.400, rainbow.100, rainbow.200, rainbow.300, rainbow.500)' : 'linear-gradient(to-r, blue.300, blue.400)'}
+      boxShadow={"inset 0 0 0 2000px rgba(4, 4, 18, 0.94)"}
       data-group
       _hover={!props.blank ? {
         bgGradient: props.rbh ? 'linear-gradient(135deg, blue.400, rainbow.100, rainbow.200, rainbow.300, rainbow.500)'
  : 'linear-gradient(to-r, blue.300, blue.400)',
         color: 'brand.700',
-        border: '2px',
+        border: '0px',
         transition: 'background-image 0.34s cubic-bezier(.08,.52,.52,1)',
+        boxShadow: "inset 0 0 0 2000px rgba(4, 4, 18, 0)"
       } : {}}
     >
       <Box p={'6'} pos={'relative'} h={'180px'} onClick={!props.blank ? onOpen : void(0)} opacity={props.blank ? 0 : 1}>

@@ -18,7 +18,7 @@ export default class Status extends React.Component {
     return (
       <Box>
           <Heading fontSize={'2.2em'} fontWeight={'bold'} display={"flex"}>
-            I'm Currently Researching
+            I'm Currently Learning About  
             <TypeWriter
               typing={this.state.typing}
               onTypingEnd={this.handleOnTypingChange}
