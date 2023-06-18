@@ -28,7 +28,7 @@ export default function CodeQuantity() {
           fontSize={16}
           hideMonthLabels
         />
-        <Status />
+        {/* <Status /> */}
         <Tools />
       </VStack>
     </Center>
