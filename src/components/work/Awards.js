@@ -8,7 +8,10 @@ import neevHacksLink from '../../files/NeevHacks Akhilesh_Balaji.pdf';
 import salusLink from '../../files/Akhilesh Balaji Project Salus.pdf';
 import sisHackLink from '../../files/SISHack 2022.pdf';
 
+import cfrceLink from '../../files/cfrce-cert.pdf'
+
 export default function Awards() {
+  console.log(`important cfrceLink: ${cfrceLink}`);
   return (
     <WorkSection sectionTitle={'Awards'}>
       <WorkItem
@@ -18,12 +21,12 @@ export default function Awards() {
         }
         workDate={'Mar 2022'}
         workExtDesc={<Text>
-          I am happy to announce that my team and I won the first place in the all-India RedBrickHacks cyberphysical hackathon (high school edition), hosted by Ashoka University, held from 10–13 January 2023. The hackathon consisted of two phases.<br/><br/>
+          I am happy to announce that my team and I won the first place in the all-India RedBrickHacks cyberphysical hackathon (high school edition), hosted by Ashoka University, held from 10–13 January 2023. The hackathon consisted of two phases.<br /><br />
 
-          In the first, teams from across India submitted proposals for a cyberphysical object requiring both software and hardware components, that could be useful to society. This included a detailed literature review. In the second phase, the top 5 teams were invited to Ashoka University's campus to implement their proposal.<br/><br/>
+          In the first, teams from across India submitted proposals for a cyberphysical object requiring both software and hardware components, that could be useful to society. This included a detailed literature review. In the second phase, the top 5 teams were invited to Ashoka University's campus to implement their proposal.<br /><br />
 
           Our project involved the creation of a vision correcting display, wherein the screen would appear clear to someone with spherical myopia or hyperopia without wearing glasses or contact lenses. This vision correction was integrated into all aspects of the operating system, and could be configured with a GUI.
-          </Text>}
+        </Text>}
         fill
         rbh
         workLink={rbhLink}
