@@ -20,16 +20,16 @@ document.addEventListener("keydown", (e) => {
   if (mode === "normal") {
     switch (e.key) {
       case "j":
-        scrollByAmount(0, 80);
+        scrollByAmount(0, 150);
         break;
       case "k":
-        scrollByAmount(0, -80);
+        scrollByAmount(0, -150);
         break;
       case "h":
-        scrollByAmount(-80, 0);
+        scrollByAmount(-150, 0);
         break;
       case "l":
-        scrollByAmount(80, 0);
+        scrollByAmount(150, 0);
         break;
       case "g":
         globalThis.scrollTo({ top: 0, behavior: "smooth" });

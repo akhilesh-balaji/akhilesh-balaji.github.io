@@ -1,16 +1,5 @@
 @import "tailwindcss";
-
 @plugin "daisyui";
-/* { */
-/*   themes: false; */
-/*   root: ":root"; */
-/*   include: ; */
-/*   exclude: ; */
-/*   prefix: ; */
-/*   logs: true; */
-/* } */
-
-/* @plugin "./catppuccinTheme.macchiato.ts"; */
 
 @plugin "daisyui/theme" {
   name: "catppuccin-macchiato";
@@ -79,8 +68,28 @@
   @apply rounded-full;
 }
 
+@import "/assets/fonts/IosevkaAile/IosevkaAile.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Noto+Serif+Grantha&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+  :root {
+    --font-sans: 'Iosevka Aile', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif;
+  }
+}
+
 .bright-accent-gradient {
   background-image: linear-gradient(to right, #37A5DE, #236AF9);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.bright-yellow-gradient {
+  background-image: linear-gradient(to right, #FBA217, #EA5F07);
   background-clip: text;
   -webkit-background-clip: text;
 

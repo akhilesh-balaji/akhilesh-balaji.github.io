@@ -8,9 +8,13 @@ interface CounterProps {
 export default function Counter(props: CounterProps) {
   return (
     <div class="flex gap-8 py-6">
-      <button class="btn" id="decrement" onClick={() => props.count.value -= 1}>-1</button>
+      <button class="btn" id="decrement" onClick={() => props.count.value -= 1}>
+        -1
+      </button>
       <p class="text-3xl tabular-nums">{props.count}</p>
-      <button class="btn" id="increment" onClick={() => props.count.value += 1}>+1</button>
+      <button class="btn" id="increment" onClick={() => props.count.value += 1}>
+        +1
+      </button>
     </div>
   );
 }

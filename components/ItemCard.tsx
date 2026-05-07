@@ -3,6 +3,7 @@ export type ItemCardItem = {
 
   sideInfo?: string;
   location?: string;
+  important?: boolean;
 
   start?: string;
   end?: string;
@@ -29,7 +30,11 @@ export default function ItemCard({ items, title }: Props) {
             <div class="flex flex-col md:flex-row md:justify-between gap-2">
               {/* Left column */}
               <div>
-                <h3 class="font-medium text-lg">
+                <h3
+                  class={`font-medium text-lg ${
+                    item.important ? "text-accent" : ""
+                  }`}
+                >
                   {item.institution}
                   {item.sideInfo && (
                     <span class="opacity-70 text-sm">
@@ -39,8 +44,11 @@ export default function ItemCard({ items, title }: Props) {
                 </h3>
 
                 {item.details && (
-                  <p class="text-sm opacity-70 mt-1">
-                    {item.details}
+                  <p
+                    class="text-sm opacity-70 mt-1"
+                    dangerouslySetInnerHTML={{ __html: item.details }}
+                  >
+                    {/* {item.details} */}
                   </p>
                 )}
 
