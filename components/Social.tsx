@@ -1,7 +1,16 @@
-export default function Social() {
+interface SocialProps {
+  layout?: "flex" | "grid";
+}
+
+export default function Social(props: SocialProps) {
   return (
     // <div class="flex items-center gap-4 py-4 content-center border-neutral/50">
-    <div class="grid grid-cols-2 gap-4 py-4 content-center border-neutral/50 sm:flex sm:flex-nowrap ml-4">
+    // <div class="grid grid-cols-2 gap-4 py-4 content-center border-neutral/50 sm:flex sm:flex-nowrap ml-4">
+    <div
+      class={props.layout === "flex"
+        ? "flex items-center gap-4 py-4 content-center border-neutral/50 ml-4"
+        : "grid grid-cols-2 gap-4 py-4 content-center border-neutral/50 sm:flex sm:flex-nowrap ml-4"}
+    >
       <a href="https://www.linkedin.com/in/akhilesh-balaji/">
         <button
           class="btn btn-soft btn-circle p-2"
