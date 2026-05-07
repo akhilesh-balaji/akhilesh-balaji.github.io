@@ -1,3 +1,6 @@
+@import "./fonts/IosevkaAile/IosevkaAile.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Noto+Serif+Grantha&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -68,14 +71,16 @@
   @apply rounded-full;
 }
 
-@import "./fonts/IosevkaAile/IosevkaAile.css";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Noto+Serif+Grantha&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&display=swap');
-
 @layer base {
   :root {
     --font-sans: 'Iosevka Aile', ui-sans-serif, system-ui, sans-serif;
     --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif;
   }
+}
+
+@theme {
+  --font-sans: 'Iosevka Aile', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif;
 }
 
 .bright-accent-gradient {
