@@ -111,7 +111,7 @@ export default define.page(function Home(ctx) {
           </p>
         </div>
 
-        <Social />
+        <Social layout="flex" />
 
         {/* <ItemCard */}
         {/*   title="As a Listener of Music" */}

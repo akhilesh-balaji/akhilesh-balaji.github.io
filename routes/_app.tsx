@@ -19,6 +19,13 @@ export default define.page(function App({ Component }) {
           as="image"
           href="/classical_square.webp"
         />
+        <link
+          rel="preload"
+          href="/fonts/IosevkaAile/WOFF2/IosevkaAile-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin="anonymous"
+        />
       </head>
       <body>
         <Component />
