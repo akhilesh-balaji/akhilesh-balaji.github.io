@@ -73,14 +73,9 @@
 
 @layer base {
   :root {
-    --font-sans: 'Iosevka Aile', ui-sans-serif, system-ui, sans-serif;
-    --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif;
+    font-family: 'Iosevka Aile', 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-sans-serif, system-ui, sans-serif !important;
+    /* --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif; */
   }
-}
-
-@theme {
-  --font-sans: 'Iosevka Aile', ui-sans-serif, system-ui, sans-serif;
-  --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif;
 }
 
 .bright-accent-gradient {

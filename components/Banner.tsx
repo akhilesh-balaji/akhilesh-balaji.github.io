@@ -4,7 +4,7 @@ export interface BannerProps {
 
 export default function Banner(props: BannerProps) {
   const src = () =>
-    props.art ? "/classical_square.png" : "/math-drawing-banner-2.png";
+    props.art ? "/classical_square.webp" : "/math-drawing-banner-2.webp";
 
   return (
     <div class="w-full pt-15">
