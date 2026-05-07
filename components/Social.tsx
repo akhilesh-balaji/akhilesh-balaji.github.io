@@ -1,6 +1,7 @@
 export default function Social() {
   return (
-    <div class="flex items-center gap-4 py-4 content-center border-neutral/50">
+    // <div class="flex items-center gap-4 py-4 content-center border-neutral/50">
+    <div class="grid grid-cols-2 gap-4 py-4 content-center border-neutral/50 sm:flex sm:flex-nowrap ml-4">
       <a href="https://www.linkedin.com/in/akhilesh-balaji/">
         <button
           class="btn btn-soft btn-circle p-2"

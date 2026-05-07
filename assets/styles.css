@@ -71,9 +71,14 @@
   @apply rounded-full;
 }
 
+@theme {
+  --font-sans: 'Iosevka Aile Web', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif;
+}
+
 @layer base {
   :root {
-    font-family: 'Iosevka Aile', 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-sans-serif, system-ui, sans-serif !important;
+    font-family: 'Iosevka Aile Web', 'Iosevka Aile', 'Noto Serif Tamil', 'Noto Serif', 'Noto Serif Grantha', ui-sans-serif, system-ui, sans-serif !important;
     /* --font-serif: 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif; */
   }
 }

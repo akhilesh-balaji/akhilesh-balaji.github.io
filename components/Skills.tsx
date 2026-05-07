@@ -108,10 +108,6 @@ export default function Skills() {
           />
           <img
             class="rounded-full border-2 border-neutral"
-            src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-          />
-          <img
-            class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/Xpra-21416B?style=for-the-badge&logo=xdotorg&logoColor=white"
           />
         </div>
