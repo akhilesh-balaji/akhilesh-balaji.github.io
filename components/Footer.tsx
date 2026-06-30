@@ -9,7 +9,7 @@ export default function Footer() {
           src="/logo.png"
           alt="the logo of Akhilesh Balaji: a right triangle adjacent to the letter B"
         />
-        <span class="italic">
+        <span class="italic text-lg">
           Freshly built by Akhilesh Balaji in 2026.
         </span>
       </div>

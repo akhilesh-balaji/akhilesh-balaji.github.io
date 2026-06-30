@@ -36,11 +36,11 @@ export default define.page(function Home(ctx) {
         <div class="max-w rounded-3xl border-2 items-center justify-center flex flex-col mx-auto px-6 py-4 my-3 border-neutral">
           <div class="max-w items-center justify-center flex flex-col mx-auto my-0">
             <div class="relative inline-block">
-              <h1 class="text-3xl font-bold my-0 absolute inset-0 text-warning/30 pointer-events-none z-10">
-                Akhilēśh Bālājī
+              <h1 class="text-3xl font-bold my-0 absolute inset-0 text-warning/30 pointer-events-none z-10 whitespace-nowrap [font-variant-caps:small-caps]">
+                akhilēśh bālāji
               </h1>
-              <h1 class="text-3xl font-bold my-0 text-warning bright-yellow-gradient">
-                Akhilesh Balajı
+              <h1 class="text-3xl font-bold my-0 text-warning bright-yellow-gradient [font-variant-caps:small-caps]">
+                akhilesh balaji
               </h1>
             </div>
             <h1 class="text-xl my-0 text-warning font-serif">
@@ -48,7 +48,7 @@ export default define.page(function Home(ctx) {
             </h1>
           </div>
 
-          <p class="my-4 text-justify font-serif">
+          <p class="mt-4 text-justify font-serif">
             நான் செய்யும் கலை பற்றிய பகுதிக்கு வரவேற்கிறேன். நான் ௰௩ ஆண்டுகளாக கர்நாடக இசை
             கற்றுக்கொண்டு வருகிறேன். லயம், ராகம் மற்றும் சாஹித்யம் ஆகியவற்றின் நடுவில் இருக்கும்
             நிலையில், நாத தியானம் செய்வதில் எனக்கு சாந்தி கிடைக்கிறது. <br />
@@ -66,7 +66,7 @@ export default define.page(function Home(ctx) {
           </p>
 
           <p class="my-0">
-            <span class="opacity-50">
+            <span class="opacity-50 font-serif font-bold">
               Some (Carnatic) listening recommendations.
             </span>
             <ul class="list-disc px-4">

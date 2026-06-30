@@ -36,11 +36,11 @@ export default define.page(function Home(ctx) {
         <div class="max-w rounded-3xl border-2 items-center justify-center flex flex-col mx-auto px-6 py-4 my-3 border-neutral">
           <div class="max-w items-center justify-center flex flex-col mx-auto my-0">
             <div class="relative inline-block">
-              <h1 class="text-3xl font-bold my-0 absolute inset-0 text-primary/30 pointer-events-none -z-10">
-                Akhilēśh Bālājī
+              <h1 class="text-3xl font-bold my-0 absolute inset-0 text-primary/30 pointer-events-none -z-10 whitespace-nowrap [font-variant-caps:small-caps]">
+                akhilēśh bālāji
               </h1>
-              <h1 class="text-3xl font-bold my-0 text-primary bright-accent-gradient">
-                Akhilesh Balajı
+              <h1 class="text-3xl font-bold my-0 text-primary bright-accent-gradient [font-variant-caps:small-caps]">
+                akhilesh balaji
               </h1>
             </div>
             <h1 class="text-xl my-0 text-primary font-serif">
@@ -48,19 +48,17 @@ export default define.page(function Home(ctx) {
             </h1>
           </div>
 
-          <p class="my-4 text-justify">
-            As an undergraduate student reading Mathematics and Computer Science
-            at Ashoka University, I am intrigued by (mathematics ∩⋆ computer
-            science ∩⋆ some theoretical physics), where ∩⋆ denotes a union
-            operator leaning toward pairwise intersection. <br />
-            <br />
-            I am interested in research areas such as quantum computing, formal
-            verification, automata, and dynamical systems.
+          <p class="my-2 text-justify text-lg space-y-2.5">
+            I am an undergraduate student reading Mathematics and Computer
+            Science at Ashoka University. My research interests lie in quantum
+            computation (error correction and fault tolerance) ∪ cryptography ∪
+            automata ∪ logic.<br />
+            Additionally, I learn, practice, and listen to <i>karnāṭik</i>{" "}
+            music as a vocal student of the art form for over a decade.
             {/* The quest for */}
             {/* knowledge will never truly be over, but as time and science */}
             {/* progress, the gap between our questions and their answers will */}
             {/* gradually close. */}
-            <br />
             <br />
             The wise words of Auvaiyār (similar sentiments have naturally been
             expressed by other philosophers) constitute my motto: “What is
@@ -68,10 +66,6 @@ export default define.page(function Home(ctx) {
             as the cosmos” (<em>
               kaṟṟatu kaimaṇ aḷavu, kallātatu ulakaḷavu
             </em>). <br />
-            <br />
-            Under the guidance of my teachers, I have also been learning and
-            performing vocal Carnatic music for 13 years. <br />
-            <br />
             <i>
               This site is a work in progress. Please check back later to see if
               it's complete.
