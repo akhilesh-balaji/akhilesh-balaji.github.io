@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <p class="my-2 text-justify text-lg space-y-2.5">
             I am an undergraduate student reading Mathematics and Computer
-            Science at Ashoka University. My research interests lie in quantum
+            Science at Ashoka University. My interests lie in quantum
             computation (error correction and fault tolerance) ∪ cryptography ∪
             automata ∪ logic.<br />
             Additionally, I learn, practice, and listen to <i>karnāṭik</i>{" "}

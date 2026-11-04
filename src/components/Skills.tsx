@@ -17,6 +17,10 @@ export default function Skills() {
           />
           <img
             class="rounded-full border-2 border-neutral"
+            src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"
+          />
+          <img
+            class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"
           />
           <img
