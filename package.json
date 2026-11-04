@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@astrojs/preact": "5.1.5",
+    "@tailwindcss/vite": "4.1.18",
+    "astro": "6.4.8",
+    "daisyui": "5.5.18",
+    "preact": "10.29.1",
+    "tailwindcss": "4.1.18"
+  }
+}

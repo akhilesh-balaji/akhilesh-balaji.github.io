@@ -1,0 +1,274 @@
+/* CMU Bright */
+@font-face {
+  font-family: 'CMU Bright';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunbmr.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Bright';
+  font-display: swap;
+  font-weight: 400;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunbmo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Bright';
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunbsr.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Bright';
+  font-display: swap;
+  font-weight: 600;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunbso.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Bright';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunbbx.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Bright';
+  font-display: swap;
+  font-weight: 700;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunbxo.otf') format('opentype');
+}
+
+/* CMU Serif */
+@font-face {
+  font-family: 'CMU Serif';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunrm.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunti.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunbx.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Serif';
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunbi.otf') format('opentype');
+}
+
+/* CMU Serif Extra (slanted / nonextended variants) */
+@font-face {
+  font-family: 'CMU Serif Extra';
+  font-display: swap;
+  font-weight: 400;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunsl.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Serif Extra';
+  font-display: swap;
+  font-weight: 700;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunbl.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Serif Extra';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunrb.otf') format('opentype');
+}
+
+/* CMU Serif Upright Italic (single weight, upright design, italic glyph variant) */
+@font-face {
+  font-family: 'CMU Serif Upright Italic';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunui.otf') format('opentype');
+}
+
+/* CMU Classical Serif (single italic weight) */
+@font-face {
+  font-family: 'CMU Classical Serif';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunci.otf') format('opentype');
+}
+
+/* CMU Concrete */
+@font-face {
+  font-family: 'CMU Concrete';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunorm.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Concrete';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunoti.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Concrete';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunobx.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Concrete';
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunobi.otf') format('opentype');
+}
+
+/* CMU Sans Serif */
+@font-face {
+  font-family: 'CMU Sans Serif';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunss.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Sans Serif';
+  font-display: swap;
+  font-weight: 400;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunsi.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Sans Serif';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunsx.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Sans Serif';
+  font-display: swap;
+  font-weight: 700;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunso.otf') format('opentype');
+}
+
+/* CMU Sans Serif Demi Condensed (single weight, condensed) */
+@font-face {
+  font-family: 'CMU Sans Serif Demi Condensed';
+  font-display: swap;
+  font-weight: 600;
+  font-stretch: condensed;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunssdc.otf') format('opentype');
+}
+
+/* CMU Typewriter Text */
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunbtl.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  font-display: swap;
+  font-weight: 300;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunbto.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmuntt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunit.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  font-display: swap;
+  font-weight: 400;
+  font-style: oblique;
+  src: url('/fonts/CMUnicode/cmunst.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmuntb.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmuntx.otf') format('opentype');
+}
+
+/* CMU Typewriter Text Variable Width */
+@font-face {
+  font-family: 'CMU Typewriter Text Variable Width';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CMUnicode/cmunvt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text Variable Width';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/CMUnicode/cmunvi.otf') format('opentype');
+}

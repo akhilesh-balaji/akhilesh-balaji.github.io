@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Concrete Math';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/CMUConcreteMath/Concrete-Math.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Concrete Math';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/CMUConcreteMath/Concrete-Math-Bold.otf') format('opentype');
+}
