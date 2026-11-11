@@ -38,8 +38,9 @@ export default function Home() {
             Science at Ashoka University. My interests lie in quantum
             computation (error correction and fault tolerance) ∪ cryptography ∪
             automata ∪ logic.<br />
-            Additionally, I learn, practice, and listen to <i>karnāṭik</i>{" "}
-            music as a vocal student of the art form for over a decade.
+            Additionally, I am a <i>karnāṭik</i>{" "} vocalist who has been
+            learning, practicing, and listening to to the art form for over a
+            decade.
             {/* The quest for */}
             {/* knowledge will never truly be over, but as time and science */}
             {/* progress, the gap between our questions and their answers will */}

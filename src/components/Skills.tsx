@@ -17,6 +17,10 @@ export default function Skills() {
           />
           <img
             class="rounded-full border-2 border-neutral"
+            src="https://img.shields.io/badge/OCaml-EC6813?style=for-the-badge&logo=ocaml&logoColor=white"
+          />
+          <img
+            class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"
           />
           <img
@@ -26,10 +30,6 @@ export default function Skills() {
           <img
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"
-          />
-          <img
-            class="rounded-full border-2 border-neutral"
-            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
           />
         </div>
       </div>
@@ -69,10 +69,10 @@ export default function Skills() {
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
           />
-          <img
+          {/*<img
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
-          />
+          />*/}
           <img
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/Deno-464647?style=for-the-badge&logo=deno&logoColor=white"
@@ -81,14 +81,19 @@ export default function Skills() {
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"
           />
+
           <img
+            class="rounded-full border-2 border-neutral"
+            src="https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=fff&style=for-the-badge"
+          />
+          {/*<img
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
           />
           <img
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white"
-          />
+          />*/}
         </div>
       </div>
 
@@ -114,10 +119,10 @@ export default function Skills() {
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/Xpra-21416B?style=for-the-badge&logo=xdotorg&logoColor=white"
           />
-          <img
+          {/*<img
             class="rounded-full border-2 border-neutral"
             src="https://img.shields.io/badge/Turing_Machine-000000?style=for-the-badge&logo=nodered&logoColor=white"
-          />
+          />*/}
         </div>
       </div>
 

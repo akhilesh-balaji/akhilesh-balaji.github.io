@@ -70,7 +70,7 @@ export default function Home() {
                   href="https://www.youtube.com/watch?v=nRhk81mKvjY"
                   class="link"
                 >
-                  Divākara Tanujam/Dīkṣitar/Yadukula Kāmbōjī/C-Ēka (Semmangudi
+                  Divākara Tanujaṁ/Dīkṣitar/Yadukula Kāmbōjī/C-Ēka (Semmangudi
                   Srinivasa Iyer)
                 </a>
               </li>
@@ -91,6 +91,38 @@ export default function Home() {
                   Neñjē Ninai Anbē/Naina Piḷḷai (Pallavi)/Jaganmōhinī +
                   Rāgamālikā/Ādi (Tiśra Naḍai, 2 kaḷai) (D.K. Pattammal + D.K.
                   Jayaraman)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=Ci4gin7yQJA"
+                  class="link"
+                >
+                  Ō Jagadambā/Śyāmā Śāstri/Ānandabhairavī/Ādi (M.S. Subbulakshmi + K.S. Narayanaswami)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=MVDcCbTSRj4&t=5500s"
+                  class="link"
+                >
+                  Śrī Kṛṣṇaṁ Bhaja Mānasa/Dīkṣitar/Janatōḍi/Ādi (2 kaḷai) (M.S. Subbulakshmi)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=dVdMYm2hXz0"
+                  class="link"
+                >
+                  Śrī Satyanārāyaṇaṁ/Dīkṣitar/Śivapantuvarāḷi/C-Rūpaka (Semmangudi Srinivasa Iyer)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://pastebin.com/eWz8hG1K"
+                  class="link"
+                >
+                  Vaṇḍinam Muralum Cōlai/Toṇḍaraḍippoḍi Āḷvār + ?/Tōḍi/Ādi (M.S. Subbulakshmi)
                 </a>
               </li>
             </ul>
