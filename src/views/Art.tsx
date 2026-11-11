@@ -111,6 +111,14 @@ export default function Home() {
               </li>
               <li>
                 <a
+                  href="https://www.youtube.com/watch?v=VJkrZf-jtZw"
+                  class="link"
+                >
+                Nī Maṭṭumē En Neñjil Nirkkirāy/Perumāḷ Murugan + Aruṇprakāś Kṛṣṇan/Kāpi/C-Rūpaka (T.M. Krishna)
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.youtube.com/watch?v=dVdMYm2hXz0"
                   class="link"
                 >
@@ -123,6 +131,14 @@ export default function Home() {
                   class="link"
                 >
                   Vaṇḍinam Muralum Cōlai/Toṇḍaraḍippoḍi Āḷvār + ?/Tōḍi/Ādi (M.S. Subbulakshmi)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=f_zYXorgEPQ"
+                  class="link"
+                >
+                Sogasu Jūḍa Taramā/Tyāgabrahmaṁ/Kannaḍa Gauḷa/C-Rūpaka (T.M. Krishna)
                 </a>
               </li>
             </ul>
