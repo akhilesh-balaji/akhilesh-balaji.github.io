@@ -35,9 +35,10 @@ export default function Home() {
           </div>
           <p class="my-2 text-justify text-lg space-y-2.5">
             I am an undergraduate student reading Mathematics and Computer
-            Science at Ashoka University. My interests lie in quantum
-            computation (error correction and fault tolerance) ∪ cryptography ∪
-            automata ∪ logic.<br />
+            Science at Ashoka University. I am still exploring my research
+            interests, but they seem, from the little I have learnt, seem to
+            lie in quantum computation (error correction and fault tolerance) ∪
+            cryptography ∪ automata ∪ logic.<br />
             Additionally, I am a <i>karnāṭik</i>{" "} vocalist who has been
             learning, practicing, and listening to to the art form for over a
             decade.
