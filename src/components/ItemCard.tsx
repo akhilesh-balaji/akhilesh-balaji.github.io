@@ -32,7 +32,7 @@ export default function ItemCard({ items, title }: Props) {
               <div>
                 <h3
                   class={`font-medium text-lg ${
-                    item.important ? "text-accent" : ""
+                    item.important ? "text-secondary" : ""
                   }`}
                 >
                   {item.institution}

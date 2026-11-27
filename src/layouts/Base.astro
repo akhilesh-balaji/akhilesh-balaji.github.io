@@ -1,17 +1,14 @@
 ---
 import '../styles/styles.css';
+import { banners, type BannerName } from '../banners.ts';
 
 interface Props {
-  banner: 'math' | 'art';
+  banner: BannerName;
+  title?: string;
 }
 
-const banners = {
-  math: '/math-drawing-banner-2.webp',
-  art: '/classical_square.webp',
-};
-const { banner } = Astro.props;
-const current = banners[banner];
-const other = banner === 'art' ? banners.math : banners.art;
+const { banner, title = 'Akhilesh Balaji' } = Astro.props;
+const current = banners[banner].src;
 
 const googleFonts =
   'https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Noto+Serif+Grantha&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&display=swap';
@@ -22,12 +19,10 @@ const googleFonts =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akhilesh Balaji</title>
+    <title>{title}</title>
 
-    <!-- This page's banner loads at high priority; the other banner is only
-         prefetched (idle priority) so it is cached before the user navigates. -->
+    <!-- This page's banner loads at high priority. -->
     <link rel="preload" as="image" href={current} fetchpriority="high" />
-    <link rel="prefetch" as="image" href={other} />
 
     <link rel="preload" as="image" href="/logo.png" />
 

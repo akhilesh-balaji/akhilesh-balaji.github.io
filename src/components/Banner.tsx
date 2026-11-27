@@ -1,18 +1,21 @@
+import { banners, type BannerName } from "../banners.ts";
+
 export interface BannerProps {
-  art: boolean;
+  /** Legacy switch: true = music banner, false = home banner. */
+  art?: boolean;
+  /** Preferred: pick a banner by name (see src/banners.ts). */
+  name?: BannerName;
 }
 
 export default function Banner(props: BannerProps) {
-  const src = () =>
-    props.art ? "/classical_square.webp" : "/math-drawing-banner-2.webp";
+  const banner = banners[props.name ?? (props.art ? "art" : "math")];
+  const src = () => banner.src;
 
   return (
     <div class="w-full pt-15">
       <div class="relative h-32 sm:h-64 w-full overflow-hidden rounded-2xl select-none">
         <div
-          class={`h-full w-full rounded-2xl bg-cover bg-center ${
-            props.art ? "sm:scale-120" : "sm:scale-100"
-          } scale-130`}
+          class={`h-full w-full rounded-2xl bg-cover bg-center ${banner.scale} scale-130`}
           style={{
             "background-image": `url(${src()})`,
             "-webkit-user-drag": "none",
@@ -21,7 +24,7 @@ export default function Banner(props: BannerProps) {
           }}
           draggable={false}
           onContextMenu={(e) => e.preventDefault()}
-          aria-label="a banner depicting various mathematical and computational designs. created by Akhilesh Balaji."
+          aria-label={banner.label}
           role="img"
         />
 

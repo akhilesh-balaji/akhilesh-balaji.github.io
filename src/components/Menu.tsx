@@ -9,18 +9,13 @@ export default function Menu() {
           alt="the logo of Akhilesh Balaji: a right triangle adjacent to the letter B"
         />
       </a>
-      <a href="/#projects">
-        <button class="btn btn-primary rounded-full btn-outline" type="button">
-          <p class="text-sm">Projects</p>
-        </button>
-      </a>
-      <a href="/#work">
+      <a href="/work">
         <button class="btn btn-warning rounded-full btn-outline" type="button">
           <p class="text-sm">Work</p>
         </button>
       </a>
 
-      <a href="https://akhileshbalaji.substack.com/">
+      <a href="/blog">
         <button
           class="btn btn-secondary rounded-full btn-outline"
           type="button"
@@ -31,6 +26,11 @@ export default function Menu() {
       <a href="/art">
         <button class="btn btn-success rounded-full btn-outline" type="button">
           <p class="text-sm">Music</p>
+        </button>
+      </a>
+      <a href="/other">
+        <button class="btn btn-primary rounded-full btn-outline" type="button">
+          <p class="text-sm">Other</p>
         </button>
       </a>
     </div>
