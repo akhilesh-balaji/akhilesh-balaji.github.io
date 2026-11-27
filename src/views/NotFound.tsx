@@ -31,7 +31,7 @@ export default function NotFound() {
 
         {/* Attribution */}
         <p class="text-sm sm:text-base text-base-content/40 max-w-md mb-8">
-          —Tyāgabrahmam in the Kharaharapriyā kriti <i>Cakkani Rājamārgamu</i>
+          —Tyāgabrahmam in the Kharaharapriyā kṛti <i>Cakkani Rājamārgamu</i>
         </p>
 
         {/* Navbar-style back home button */}

@@ -75,7 +75,7 @@ export default function Work() {
             start: "Monsoon 2026",
             end: "",
             details:
-              "Was in charge of the programming lab component of the course, which taught the functional programming paradigm. <a href='/notes/functional_programming_notes_and_problems_monsoon_2026_dm.pdf' class=link>Functional programming notes and problems</a>.",
+              "Was in charge of the programming lab component of the course, which taught the functional programming paradigm. <a href='/notes/functional_programming_notes_and_problems_monsoon_2026_dm.pdf' class=link>Functional programming notes and problems</a>. <a href='https://zacaffeinemachine.github.io/discrete-mathematics/' class=link>Course Website</a>.",
           },
         ]}
       />

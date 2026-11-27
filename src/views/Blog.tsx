@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <Page banner="math" heading="Blog" current="blog">
       <LinkCard
-        title="Blog"
+        title="blog"
         items={posts}
         empty="Posts will appear here. Please check back later."
       />
