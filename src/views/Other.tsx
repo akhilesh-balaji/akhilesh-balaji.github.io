@@ -5,7 +5,7 @@ import { notes } from "../data/notes.ts";
 
 export default function Other() {
   return (
-    <Page banner="escher" heading="Other">
+    <Page banner="escher" heading="Other" current="other">
     {/* <ItemCard
         title="Research and Academic Projects"
         items={[
@@ -21,7 +21,7 @@ export default function Other() {
         ]}
       />*/}
       <ItemCard
-        title="Other Projects"
+        title="other projects"
         items={[
           {
             institution: "Skr̥ptLearn",
@@ -60,7 +60,7 @@ export default function Other() {
             start: "Jan 2018",
             end: "Mar 2025",
             details:
-              "Founded and lead a science magazine focused on rigorous yet intuitive science communication. Published in collaboration with a peer .",
+              "Founded and lead a science magazine focused on rigorous yet intuitive science communication. Published in collaboration with a peer. <a href='https://sites.google.com/view/thegeekly/home' class=link>Link</a>.",
           },
           {
             institution: "Textylic",
@@ -73,13 +73,44 @@ export default function Other() {
       />
 
       <LinkCard
-        title="Expository Notes and Miscellaneous Material"
-        items={notes}
+        title="expository notes and miscellaneous material"
         empty="Notes and other material will be posted here. Please check back later."
+        items={[
+          {
+            title: "Slides for talk on <i>rāga</i>s as data structures (iteration 1)",
+            href: "/notes/melakarta_as_data_structure_1_monsoon_2026_dsa.pdf",
+            date: "Nov 2026",
+          },
+          {
+            title: "Notes and problems on functional programming",
+            href: "/notes/functional_programming_notes_and_problems_monsoon_2026_dm.pdf",
+            date: "Nov 2026",
+          },
+          {
+            title: "A write-up on Penrose diagrams under the guidance of Prof. Vikram Vyas",
+            href: "/notes/penrose_diagrams_writeup_monsoon_2025_pos.pdf",
+            date: "Feb 2026",
+          },
+          {
+            title: "A write-up containing proof sketches of the undecidability of string rewriting as I worked on formalizing it",
+            href: "/notes/undecidability_of_string_rewriting_summer_2026.pdf",
+            date: "May 2026",
+          },
+          {
+            title: "Slides from a presentation I gave after my initial reading of <code>arXiv:0905.2794</code>",
+            href: "/notes/qec_prelim_slides_sep_2024.pdf",
+            date: "Sep 2024",
+          },
+          {
+            title: "Slides from a presentation I gave on possible avenues of further reading about open quantum systems' use in QEC",
+            href: "/notes/quantum_master_equations_oqs_sep_2024.pdf",
+            date: "Sep 2024",
+          },
+        ]}
       />
 
       <ItemCard
-        title="Volunteer Experience"
+        title="volunteer experience"
         items={[
           {
             institution: "Saṅgītāmṛtaṁ",
@@ -94,7 +125,6 @@ export default function Other() {
             institution: "Computer Comprehension Programme",
             sideInfo: "Founder & Leading Coordinator (aff. Youth For Seva)",
             location: "Bengaluru, KA, India",
-            important: true,
             start: "Sep 2022",
             end: "Feb 2025",
             details:
@@ -158,6 +188,11 @@ export default function Other() {
           },
         ]}
       />*/}
+
+        <div class="max-w rounded-3xl border-2 items-center justify-center flex flex-col mx-auto px-6 py-4 my-3 border-neutral">
+          <div class="max-w items-center justify-center flex flex-col mx-auto my-0">
+          <p>The typefaces used on this website are Computer Modern Serif, Computer Modern Concrete, and Iosevka. The banner images except the one on this page are created and invisibly watermarked by me. The banner on this page is cropped from a lithograph by M.C. Escher, called <span class='italic'>Other World II</span>.</p>
+          </div></div>
 
     </Page>
   );

@@ -52,11 +52,11 @@ export default function Home() {
             learned is but a handful of earth; what remains unknown is as vast
             as the cosmos” (<em>
               kaṟṟatu kaimaṇ aḷavu, kallātatu ulakaḷavu
-            </em>). <br />
+            </em>). {/*<br />
             <i>
               This site is a work in progress. Please check back later to see if
               it's complete.
-            </i>
+            </i>*/}
             {/* Try updating this... message in the */}
             {/* <code class="mx-2">./routes/index.tsx</code> file, and refresh. */}
           </p>

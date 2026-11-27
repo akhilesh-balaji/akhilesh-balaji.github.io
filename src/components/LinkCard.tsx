@@ -27,8 +27,9 @@ export default function LinkCard({ title, items, empty }: Props) {
           <ul class="list-disc px-4 space-y-1 my-0">
             {items.map((item) => (
               <li>
-                <a class="link" href={item.href} target="_blank" rel="noopener">
-                  {item.title}
+                <a class="link" href={item.href} target="_blank" rel="noopener" 
+                dangerouslySetInnerHTML={{ __html: item.title }}>
+                  {/*item.title*/}
                 </a>
                 {item.date && (
                   <span class="opacity-60 text-sm"> ({item.date})</span>

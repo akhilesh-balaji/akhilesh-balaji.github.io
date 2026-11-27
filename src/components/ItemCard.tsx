@@ -15,15 +15,24 @@ export type ItemCardItem = {
 type Props = {
   items: ItemCardItem[];
   title?: string;
+  /** Optional blurb shown under the title (HTML allowed, e.g. links). */
+  description?: string;
 };
 
-export default function ItemCard({ items, title }: Props) {
+export default function ItemCard({ items, title, description }: Props) {
   return (
     <div class="max-w rounded-3xl border-2 items-center justify-center flex flex-col mx-auto px-6 py-4 my-3 border-neutral w-full">
       <div class="w-full">
         <h2 class="text-xl font-semibold  border-b-2 border-neutral pb-2 mb-4 text-primary [font-variant-caps:small-caps]">
           {title}
         </h2>
+
+        {description && (
+          <p
+            class="text-sm opacity-70 mb-4 italic"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+        )}
 
         <div class="space-y-5">
           {items.map((item) => (
@@ -34,8 +43,9 @@ export default function ItemCard({ items, title }: Props) {
                   class={`font-medium text-lg ${
                     item.important ? "text-secondary" : ""
                   }`}
+                  dangerouslySetInnerHTML={{ __html: item.institution }}
                 >
-                  {item.institution}
+                  {/*item.institution*/}
                   {item.sideInfo && (
                     <span class="opacity-70 text-sm">
                       {" "}★ {item.sideInfo}

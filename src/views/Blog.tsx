@@ -4,7 +4,7 @@ import { posts } from "../data/blog.ts";
 
 export default function Blog() {
   return (
-    <Page banner="math" heading="Blog">
+    <Page banner="math" heading="Blog" current="blog">
       <LinkCard
         title="Blog"
         items={posts}

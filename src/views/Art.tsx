@@ -17,7 +17,7 @@ export default function Home() {
         </span>
       </button>
       <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <Menu />
+        <Menu current="art" />
         <Banner art={true} />
         <div class="max-w rounded-3xl border-2 items-center justify-center flex flex-col mx-auto px-6 py-4 my-3 border-neutral">
           <div class="max-w items-center justify-center flex flex-col mx-auto my-0">

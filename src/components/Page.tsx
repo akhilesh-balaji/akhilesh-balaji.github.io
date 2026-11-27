@@ -9,11 +9,21 @@ type Props = {
   banner: BannerName;
   /** Visually hidden page heading, for screen readers. */
   heading: string;
+  /** Optional visible title shown under the banner (CMU Serif, bold). */
+  title?: string;
+  /** Which menu button to show as filled. */
+  current?: "work" | "blog" | "art" | "other";
   children?: ComponentChildren;
 };
 
 /** Shared page frame: Vim hint, menu, banner, content, footer. */
-export default function Page({ banner, heading, children }: Props) {
+export default function Page({
+  banner,
+  heading,
+  title,
+  current,
+  children,
+}: Props) {
   return (
     <div class="px-4 py-8 mx-auto min-h-screen">
       <button
@@ -25,9 +35,15 @@ export default function Page({ banner, heading, children }: Props) {
         </span>
       </button>
       <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <Menu />
+        <Menu current={current} />
         <Banner name={banner} />
-        <h1 class="sr-only">{heading}</h1>
+        {title ? (
+          <div class="max-w rounded-3xl border-2 flex flex-col mx-auto px-6 py-3 my-3 border-neutral w-full text-center">
+            <h1 class="text-3xl font-serif font-bold m-0">{title}</h1>
+          </div>
+        ) : (
+          <h1 class="sr-only">{heading}</h1>
+        )}
         {children}
         <Footer />
       </div>

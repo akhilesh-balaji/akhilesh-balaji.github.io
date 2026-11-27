@@ -74,7 +74,7 @@
 
 @theme {
   --font-sans: 'Iosevka Aile Web', ui-sans-serif, system-ui, sans-serif;
-  --font-serif: 'CMU Serif', 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Grantha', ui-serif, Georgia, serif;
+  --font-serif: 'CMU Serif', 'Noto Serif', 'Noto Serif Tamil', 'Noto Serif Telugu', 'Noto Serif Grantha', ui-serif, Georgia, serif;
 }
 
 @layer base {
@@ -102,4 +102,8 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
 
+}
+
+* {
+ box-shadow: none !important; 
 }

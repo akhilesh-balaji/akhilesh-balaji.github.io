@@ -3,18 +3,27 @@ import Page from "../components/Page.tsx";
 
 export default function Work() {
   return (
-    <Page banner="math" heading="Work">
+    <Page banner="math" heading="Work" current="work">
       <ItemCard
-        title="Experience"
+        title="experience"
         items={[
           {
+            institution: "DiagonaLean",
+            sideInfo: "Research Assistant",
+            location: "Sri City, AP, India",
+            start: "May 2026",
+            end: "Present",
+            details:
+              "Under Prof. T.V.H. Prathamesh and Prof. Aalok Thakkar. Working on formalizing undecidability proofs in Lean 4 as part of an e ort to create a diagonalization/undecidability library for Lean, and implementing tactics to traverse the reduction graph formed by the theorems formalized. <a href='https://diagonalean.vercel.app/' class=link>Project website link</a>.",
+          },
+          {
             institution: "The Microscope Project",
-            sideInfo: "Ashoka University",
+            sideInfo: "Research Assistant, Ashoka University",
             location: "Sonipat, HR, India",
             start: "Jan 2026",
             end: "Present",
             details:
-              "Under Prof. Meghana Agarwala. Working on processing and analysis of microscope images of fossilized pollen for classification. Full details cannot be released in public domain yet.",
+              "Under Prof. Meghana Agarwala. Working on processing and analysis of microscope images of fossilized pollen for classification. Full details cannot be released in public domain yet. The work is supported by Schmidt Sciences at Oxford University.",
           },
           // {
           //   institution: "Ashoka University Mathematics Society",
@@ -56,25 +65,17 @@ export default function Work() {
       />
 
       <ItemCard
-        title="Teaching (courses I have been a TA for)"
+        title="teaching"
+        description="Courses I have been a teaching assistant for."
         items={[
           {
-            institution: "Saṅgītāmṛtaṁ",
-            sideInfo: "Founder & Leading Coordinator (aff. Youth For Seva)",
-            location: "Bengaluru, KA, India",
-            start: "Jun 2024",
-            end: "Oct 2025",
+            institution: "<code>[CS-1110/MAT-2203-1]</code> Discrete Mathematics",
+            sideInfo: "TA for Prof. Abhishek Khetan",
+            location: "Ashoka University",
+            start: "Monsoon 2026",
+            end: "",
             details:
-              "Visited government schools weekly to teach secular Carnatic vocal music. Promoted cultural pride and a positive mindset among students. Assembled an anthology of secular Kannada songs promoting peace and inclusivity.",
-          },
-          {
-            institution: "Computer Comprehension Programme",
-            sideInfo: "Founder & Leading Coordinator (aff. Youth For Seva)",
-            location: "Bengaluru, KA, India",
-            start: "Sep 2022",
-            end: "Feb 2025",
-            details:
-              "Visited government schools weekly to teach programming, improving problem-solving & creativity. Coordinated a team of 9 volunteers and prepared teaching material for 150+ students.",
+              "Was in charge of the programming lab component of the course, which taught the functional programming paradigm. <a href='/notes/functional_programming_notes_and_problems_monsoon_2026_dm.pdf' class=link>Functional programming notes and problems</a>.",
           },
         ]}
       />
